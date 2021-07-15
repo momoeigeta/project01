@@ -1,7 +1,12 @@
 import React from 'react';
 import './styles/Contact.css';
+import { useForm } from 'react-hook-form'
+
 
 const Form = () => {
+
+    const { register, handleSubmit, errors } = useForm();
+
 
     return (
         <div class="Form">
@@ -11,7 +16,8 @@ const Form = () => {
                     お名前
                     <span className="caution">*</span>
                 </p>
-                <input type="text" class="Form-Item-Input">
+                <input type="text" name="name" ref={register({ required: true})}
+                    class="Form-Item-Input">
                 </input>
             </div>
 
