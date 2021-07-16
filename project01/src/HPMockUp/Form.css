@@ -1,0 +1,75 @@
+
+/* 周りの背景 */
+.login-form{
+    width: 360px;
+    display: inline-flex;
+
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+
+    /* padding: 32px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    align-items: center;
+
+  }
+
+/* 全体 */
+  .login-form{
+    background-color: #f5a5a5;
+    /* text-align: right; */
+    /* justify-content: center; */
+  }
+
+/* 文字 */
+  .login-form label{
+    /* text-align: right; */
+    font-weight: bold;
+    width: 100%;
+    /* color: #333; */
+    /* letter-spacing: 0.05em; */
+    font-size: 16px;
+    text-align: left;
+
+  }
+/* 記入欄 */
+  .login-form input{
+    font-size: 24px;
+    width: 200px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-left: 16px;
+  }
+
+
+  .login-form button{
+    background: royalblue;
+    border: none;
+    padding: 4px 16px;
+    border-radius: 4px;
+    min-width: 80px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+/* フォームの間 */
+  .form-group{
+    margin-bottom: 12px;
+  }
+
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .error{
+    color: red;
+    font-size: 12px;
+    padding: 4px;
+  }

@@ -1,107 +1,148 @@
 import React from 'react';
+import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
+// import Confirm from './Confirm';
+import './Form.css';
 import './styles/Contact.css';
-import { useForm } from 'react-hook-form'
 
 
 const Form = () => {
 
-    const { register, handleSubmit, errors } = useForm();
-
-
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+    console.log(errors);
     return (
-        <div class="Form">
+        <div className="Form">
+            <div className="Form-Item">
+                <form onSubmit={handleSubmit(onSubmit)}>
 
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    お名前
-                    <span className="caution">*</span>
-                </p>
-                <input type="text" name="name" ref={register({ required: true})}
-                    class="Form-Item-Input">
-                </input>
-            </div>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="name">お名前
+                            <span className="caution">*</span>
+                            <input type="text" id="name" name="name"
+                                className="Form-Item-Input"
+                                {...register("name", { required: true })} />
+                            {errors.name &&
+                                <div className="error">お名前を入力してください</div>}
+                        </p>
+                    </div>
 
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    会社名・法人名・団体名
-                    <span className="caution">*</span>
-                    <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
-                </p>
-                <input type="text" class="Form-Item-Input">
-                </input>
-            </div>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="company">会社名・法人名・団体名
+                            <span className="caution">*</span>
+                            <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
+                            <input type="text" id="company" name="company"
+                                className="Form-Item-Input"
+                                {...register("company", { required: true })} />
+                            {errors.company &&
+                                <div className="error">会社名・法人名・団体名を入力してください</div>}
+                        </p>
+                    </div>
 
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    部署・役職等
-                    <span class="caution">*</span>
-                </p>
-                <input type="text" class="Form-Item-Input">
-                </input>
-            </div>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="department">
+                            部署・役職等
+                            <span className="caution">*</span>
+                            <input type="text" id="department" name="department"
+                                className="Form-Item-Input"
+                                {...register("department", { required: true })} />
+                            {errors.department &&
+                                <div className="error">部署・役職等を入力してください</div>}
+                        </p>
+                    </div>
 
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    メールアドレス
-                    <span class="caution">*</span>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="email">メールアドレス
+                            <span className="caution">*</span>
+                            <input type="text" id="email" name="email"
+                                className="Form-Item-Input"
+                                {...register("email", {
+                                    required: true,
+                                    pattern: /.+@.+\..+/i
+                                })} />
+                            {errors.email?.type === "required" &&
+                                <div className="error">メールアドレスを入力してください</div>}
+                            {errors.email?.type === "pattern" &&
+                                <div className="error">正しいメールアドレスを入力してください</div>}
+                        </p>
+                    </div>
 
-                </p>
-                <input type="email"
-                    class="Form-Item-Input">
-                </input>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="tel">電話番号
+                            <span className="caution">*</span>
+                            <input type="tel" id="tel" name="tel"
+                                className="Form-Item-Input"
+                                {...register("tel", {
+                                    required: true,
+                                    pattern: /^[0-9]+$/i
+                                })} />
+                            {errors.tel?.type === "required" &&
+                                <div className="error">電話番号を入力してください</div>}
+                            {errors.tel?.type === "pattern" &&
+                                <div className="error">半角数字で入力してください</div>}
+                        </p>
+                    </div>
 
-            </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    電話番号
-                    <span class="caution">*</span>
-                </p>
-                <input type="tel" class="Form-Item-Input">
-                </input>
-            </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    郵便番号
-                    <span class="caution">*</span>
-                </p>
-                <input type="postal-code" class="Form-Item-Input">
-                </input>
-            </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    都道府県
-                    <span class="caution">*</span>
-                </p>
-                <input type="address-level1" class="Form-Item-Input">
-                </input>
-            </div>
-            <div class="Form-Item">
-                <p class="Form-Item-Label">
-                    ご住所
-                    <span class="caution">*</span>
-                </p>
-                <input type="text" class="Form-Item-Input">
-                </input>
-            </div>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="postalCode">郵便番号
+                            <span className="caution">*</span>
+                            <input type="postalCode" id="postalCode" name="postalCode"
+                                className="Form-Item-Input"
+                                {...register("postalCode", {
+                                    required: true,
+                                    pattern: /\A\d{3}[-]?\d{4}\z/i
+                                })} />
+                            {errors.postalCode?.type === "required" &&
+                                <div className="error">郵便番号を入力してください</div>}
+                            {errors.postalCode?.type === "pattern" &&
+                                <div className="error">正しい郵便番号を入力してください</div>}
+                        </p>
+                    </div>
 
-            <div class="Form-Item">
-                <p class="Form-Item-Label isMsg">
-                    メッセージ本文
-                    <span class="caution">*</span>
-                </p>
-                <textarea
-                    class="Form-Item-Textarea"
-                    id="test"
-                ></textarea>
-                <p id="validation"></p>
+                    <div className="Form-Item-Label">
+                        <p htmlFor="prefectures">都道府県
+                            <span className="caution">*</span>
+                            <input type="address-level1" id="prefectures" name="prefectures"
+                                className="Form-Item-Input"
+                                {...register("prefectures", { required: true })} />
+                            {errors.prefectures &&
+                                <div className="error">都道府県を入力してください</div>}
+                        </p>
+                    </div>
+
+                    <div className="Form-Item-Label">
+                        <p htmlFor="address">ご住所
+                            <span className="caution">*</span>
+                            <input type="text" id="address" name="address"
+                                className="Form-Item-Input"
+                                {...register("address", { required: true })} />
+                            {errors.address &&
+                                <div className="error">ご住所を入力してください</div>}
+                        </p>
+                    </div>
+
+                    <div className="Form-Item-Label">
+                        <p htmlFor="message">メッセージ本文
+                            <span className="caution">*</span>
+                            <textarea id="message" name="message"
+                                className="Form-Item-Textarea"
+                                {...register("message", { required: true })} />
+                            {errors.message &&
+                                <div className="error">メッセージを入力してください</div>}
+                        </p>
+                    </div>
+
+                    <button
+                        type="submit"
+                        className="Form-Btn"
+                    >
+                        {/* <Link to="/Confirm"> */}
+                            確認画面へ
+                        {/* </Link> */}
+                    </button>
+                </form>
             </div>
-            <input
-                type="submit"
-                class="Form-Btn"
-                value="確認画面へ"
-            ></input>
         </div>
-
-    )
+    );
 }
 export default Form;
