@@ -1,20 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
-// import Confirm from './Confirm';
+import Confirm from './Confirm';
 import './Form.css';
 import './styles/Contact.css';
+import { Element, scroller } from 'react-scroll';
 
 
 const Form = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-    console.log(errors);
+    const { register, handleSubmit, watch, reset, getValues, formState: { errors } } = useForm();
+    const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
+    const hideConfirmation = () => setIsConfirmationVisible(false);
+    const onSubmitData = () => setIsConfirmationVisible(true);
+
+    const scrollToTarget = () => {
+        //にゅるっと移動させる関数を宣言
+        scroller.scrollTo('scrollTarget', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeOutQuint'
+        })
+    }
+
+    // const Name = watch("name");
+    // const Company = watch("company");
+    // const Department = watch("department");
+    // const Email = watch("email");
+    // const Tel = watch("tel");
+    // const PostalCode = watch("postalCode");
+    // const Prefectures = watch("prefectures");
+    // const Address = watch("address");
+    // const Message = watch("message");
+
+
+
+
+    // const onSubmit = data => console.log(data);
+    // console.log(errors);
+
+
     return (
         <div className="Form">
             <div className="Form-Item">
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmitData)} className="contactBox">
 
                     <div className="Form-Item-Label">
                         <p htmlFor="name">お名前
@@ -58,7 +87,7 @@ const Form = () => {
                                 className="Form-Item-Input"
                                 {...register("email", {
                                     required: true,
-                                    pattern: /.+@.+\..+/i
+                                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
                                 })} />
                             {errors.email?.type === "required" &&
                                 <div className="error">メールアドレスを入力してください</div>}
@@ -90,12 +119,12 @@ const Form = () => {
                                 className="Form-Item-Input"
                                 {...register("postalCode", {
                                     required: true,
-                                    pattern: /\A\d{3}[-]?\d{4}\z/i
+                                    pattern: /^\d{3}-\d{4}$/,
                                 })} />
                             {errors.postalCode?.type === "required" &&
                                 <div className="error">郵便番号を入力してください</div>}
                             {errors.postalCode?.type === "pattern" &&
-                                <div className="error">正しい郵便番号を入力してください</div>}
+                                <div className="error">ハイフンを入れて正しい郵便番号を入力してください</div>}
                         </p>
                     </div>
 
@@ -126,21 +155,40 @@ const Form = () => {
                             <span className="caution">*</span>
                             <textarea id="message" name="message"
                                 className="Form-Item-Textarea"
-                                {...register("message", { required: true })} />
+                                {...register("message", {
+                                    required: true,
+                                    minLength: 1,
+                                    maxLength: 300,
+                                })} />
                             {errors.message &&
-                                <div className="error">メッセージを入力してください</div>}
+                                <div className="error">メッセージを300文字以内で入力してください</div>}
                         </p>
                     </div>
 
-                    <button
-                        type="submit"
-                        className="Form-Btn"
-                    >
-                        {/* <Link to="/Confirm"> */}
+                    <div className='btnBox'>
+                        <input
+                            type="button"
+                            onClick={reset}
+                            value="クリア"
+                            className="Form-Btn reset"
+                        />
+
+                        <button
+                            type="submit"
+                            className="Form-Btn"
+                            onClick={scrollToTarget}
+                        >
                             確認画面へ
-                        {/* </Link> */}
-                    </button>
+                        </button>
+                    </div>
                 </form>
+                {/* <Element name='scrollTarget' /> */}
+                {isConfirmationVisible &&
+                    <Link to="/Confirm"
+                        // values={getValues()}
+                        // hideConfirmation={hideConfirmation}
+                    />
+                }
             </div>
         </div>
     );
