@@ -1,23 +1,31 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import './styles/Contact.css';
 
 
-const Confirm = props => {
+const Confirm = (props) => {
     const { values, hideConfirmation } = props;
+
+    // values = getValues();
+    // hideConfirmation = { hideConfirmation };
+
+    // const { getValues } = useForm;
+
 
     return (
         <>
-            <div>
-            <header className="header" >
-                <div className="back">
-
-                    <h1 className="f">お問い合わせ</h1>
-                    <h1 className="f">確認画面</h1>
-
-                </div>
-            </header>
-            </div>
             
+            <div>
+                <header className="header" >
+                    <div className="back">
+
+                        <h1 className="f">お問い合わせ</h1>
+                        <h1 className="f">確認画面</h1>
+
+                    </div>
+                </header>
+            </div>
+
             <div className="Form">
                 <div className="Form-Item">
                     <div className='contactBox'>
