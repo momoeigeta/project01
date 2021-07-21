@@ -1,7 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './styles/Contact.css';
-
+import Form from './Form';
+import { UseFormRegisterReturn } from 'react-hook-form'
 
 const Confirm = (props) => {
     const { values, hideConfirmation } = props;
@@ -14,7 +15,6 @@ const Confirm = (props) => {
 
     return (
         <>
-            
             <div>
                 <header className="header" >
                     <div className="back">

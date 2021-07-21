@@ -7,7 +7,7 @@ import './styles/Contact.css';
 import { Element, scroller } from 'react-scroll';
 
 
-const Form = ({onSubmit}) => {
+const Form = () => {
 
     const { register, handleSubmit, watch, reset, getValues, formState: { errors } } = useForm();
     const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
@@ -22,17 +22,19 @@ const Form = ({onSubmit}) => {
     //     })
     // };
 
-
     const history = useHistory();
     const move = () => {
         {
             isConfirmationVisible &&
-                // history.push("/Confirm")
+                history.push("/Confirm")
+                
+            // (values = getValues());
 
-                <Confirm
-                    values={getValues()}
-                    hideConfirmation={hideConfirmation}
-                />
+
+            // <Confirm
+            // values={getValues()}
+            // hideConfirmation={hideConfirmation}
+            // />
 
             // history.push(<Confirm
             //     values={getValues()}
@@ -213,7 +215,15 @@ const Form = ({onSubmit}) => {
                                 type="submit"
                                 className="Form-Btn"
                                 // >
-                                onClick={() => move()}
+                                // onClick={() => onSubmit()}
+
+                                onClick={() => {
+                                    move();
+                                    // const values = getValues();
+                                    // console.log(values);
+                                }}
+
+
                             // onClick= */
                             // /* {isConfirmationVisible &&
                             //     <Confirm
@@ -238,7 +248,7 @@ const Form = ({onSubmit}) => {
                 />
             } */}
 
-        </div>
+        </div >
     );
 }
 

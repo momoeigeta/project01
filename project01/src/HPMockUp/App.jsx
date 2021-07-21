@@ -27,16 +27,21 @@ const App = () => {
             <BrowserRouter>
                 <div>
                     <Route exact path={'/'} component={Home} />
-                    <Route path={'/Contact'} component={Contact} />
-                    <Route path={'/Confirm'} component={Confirm} />
+                    <Route exact path={'/Contact'} component={Contact} />
+                    <Route exact path={'/Confirm'} component={Confirm} />
                 </div>
             </BrowserRouter>
 
             <>
-                {
+
+                {/* {
+                    page === 1 &&
+                    <Home onSubmit={nextPage} />
+                } */}
+                {/* {
                     page === 1 &&
                     <Form onSubmit={nextPage} />
-                }
+                } */}
                 {page === 2 &&
                     <Contact onSubmit={(values) => Confirm({
                         ...data,
