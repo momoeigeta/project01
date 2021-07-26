@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import { Link, useHistory } from 'react-router-dom';
-import Confirm from './Confirm';
+import { useHistory } from 'react-router-dom';
+// import Confirm from './Confirm';
 import './Form.css';
 import './styles/Contact.css';
-import { Element, scroller } from 'react-scroll';
+// import { Element, scroller } from 'react-scroll';
 
 
 const Form = () => {
 
-    const { register, handleSubmit, watch, reset, getValues, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, getValues, formState: { errors } } = useForm();
     const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
     const hideConfirmation = () => setIsConfirmationVisible(false);
     const onSubmitData = () => setIsConfirmationVisible(true);
@@ -23,56 +23,6 @@ const Form = () => {
     // };
 
     const history = useHistory();
-    const move = () => {
-        {
-            isConfirmationVisible &&
-                history.push("/Confirm")
-                
-            // (values = getValues());
-
-
-            // <Confirm
-            // values={getValues()}
-            // hideConfirmation={hideConfirmation}
-            // />
-
-            // history.push(<Confirm
-            //     values={getValues()}
-            //     hideConfirmation={hideConfirmation}
-            // />)
-
-        };
-    };
-    //     {
-    //         isConfirmationVisible &&
-    //             <Confirm
-
-    //                 values={getValues()}
-    //                 hideConfirmation={hideConfirmation}
-    //             />
-    // };
-
-
-    // history.push("/Confirm");
-    // values = getValues();
-    // hideConfirmation = hideConfirmation;
-
-    // }
-
-
-    // const Name = watch("name");
-    // const Company = watch("company");
-    // const Department = watch("department");
-    // const Email = watch("email");
-    // const Tel = watch("tel");
-    // const PostalCode = watch("postalCode");
-    // const Prefectures = watch("prefectures");
-    // const Address = watch("address");
-    // const Message = watch("message");
-
-
-
-
     // const onSubmit = data => console.log(data);
     // console.log(errors);
 
@@ -216,12 +166,27 @@ const Form = () => {
                                 className="Form-Btn"
                                 // >
                                 // onClick={() => onSubmit()}
-
                                 onClick={() => {
-                                    move();
+
+                                    // {
+                                    isConfirmationVisible &&
+                                        history.push("/Confirm",
+                                            {
+                                                values: getValues(),
+
+                                                hideConfirmation: hideConfirmation()
+                                            }
+
+                                        );
+
+
+                                    // move();
                                     // const values = getValues();
                                     // console.log(values);
-                                }}
+
+                                }
+                                }
+                            // }
 
 
                             // onClick= */

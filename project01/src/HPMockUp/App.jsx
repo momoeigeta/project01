@@ -1,20 +1,20 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import react, { useState } from 'react';
+// import { useState } from 'react';
 import Home from './Home';
-import Form from './Form';
+// import Form from './Form';
 import Contact from './Contact';
 import Confirm from './Confirm';
 const App = () => {
 
-    const [page, setPage] = useState(1);
-    const [data, setData] = useState({});
-    const nextPage = (values) => {
-        setPage(page + 1);
-        setData(prevData => ({
-            ...prevData,
-            ...values,
-        }));
-    };
+    // const [page, setPage] = useState(1);
+    // const [data, setData] = useState({});
+    // const nextPage = (values) => {
+    //     setPage(page + 1);
+    //     setData(prevData => ({
+    //         ...prevData,
+    //         ...values,
+    //     }));
+    // };
 
 
 
@@ -42,13 +42,13 @@ const App = () => {
                     page === 1 &&
                     <Form onSubmit={nextPage} />
                 } */}
-                {page === 2 &&
+                {/* {page === 2 &&
                     <Contact onSubmit={(values) => Confirm({
                         ...data,
                         ...values,
                     })}
                     />
-                }
+                } */}
             </>
         </>
     )

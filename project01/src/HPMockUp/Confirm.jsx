@@ -1,16 +1,21 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+// import { useForm } from 'react-hook-form';
 import './styles/Contact.css';
-import Form from './Form';
-import { UseFormRegisterReturn } from 'react-hook-form'
+// import Form from './Form';
+// import { UseFormRegisterReturn } from 'react-hook-form'
+import { useLocation, useHistory } from 'react-router-dom';
 
-const Confirm = (props) => {
-    const { values, hideConfirmation } = props;
+const Confirm = (
+    // props
+) => {
+    // const { values, hideConfirmation } = props;
 
-    // values = getValues();
-    // hideConfirmation = { hideConfirmation };
+    const location = useLocation();
+    const state = location.state;
 
-    // const { getValues } = useForm;
+    const history = useHistory();
+
+
 
 
     return (
@@ -35,7 +40,7 @@ const Confirm = (props) => {
                             <span className="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.name}
+                            {state.values.name}
                         </p>
                     </div>
 
@@ -46,7 +51,7 @@ const Confirm = (props) => {
                             <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
                         </p>
                         <p className="value">
-                            {values.company}
+                            {state.values.company}
                         </p>
                     </div>
 
@@ -56,7 +61,7 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.department}
+                            {state.values.department}
                         </p>
                     </div>
 
@@ -66,7 +71,7 @@ const Confirm = (props) => {
                             <span className="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.email}
+                            {state.values.email}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -75,7 +80,7 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.tel}
+                            {state.values.tel}
                         </p>
                     </div>
 
@@ -85,7 +90,7 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.postalCode}
+                            {state.values.postalCode}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -94,7 +99,7 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.prefectures}
+                            {state.values.prefectures}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -103,7 +108,7 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.address}
+                            {state.values.address}
                         </p>
                     </div>
 
@@ -113,13 +118,13 @@ const Confirm = (props) => {
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {values.message}
+                            {state.values.message}
                         </p>
                     </div>
                     <div className='btnBox'>
                         <input
                             type='button'
-                            onClick={hideConfirmation}
+                            onClick={() => history.goBack()}
                             value='戻る'
                             className='Form-Btn reset' />
 
