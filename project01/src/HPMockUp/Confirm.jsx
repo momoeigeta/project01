@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
 import './styles/Contact.css';
 // import Form from './Form';
 // import { UseFormRegisterReturn } from 'react-hook-form'
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory, Link } from 'react-router-dom';
+import Contact from './Contact';
+
 
 const Confirm = (
-    // props
+    props
 ) => {
-    // const { values, hideConfirmation } = props;
+    const { values, hideConfirmation } = props;
 
     const location = useLocation();
     const state = location.state;
 
     const history = useHistory();
 
-
-
+    // const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
+    // const hideConfirmation = () => setIsConfirmationVisible(false)
+    const [showresults, setShowResults] = useState(true);
+    const onClick = () => setShowResults(false);
 
     return (
         <>
@@ -122,12 +126,26 @@ const Confirm = (
                         </p>
                     </div>
                     <div className='btnBox'>
+                        {/* <Link to="/Contact"
+                        
+                        > */}
                         <input
                             type='button'
-                            onClick={() => history.goBack()}
+                            // onClick={() => 
+
+                            // hideConfirmation
+                            // }
+
+                            onClick={() => onClick()}
+
+                            // onClick={() => history.goBack()}
                             value='戻る'
                             className='Form-Btn reset' />
 
+                        {/* {showresults ? null : null} */}
+
+
+                        {/* </Link> */}
                         <button
                             type="submit"
                             className="Form-Btn"

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
-// import Confirm from './Confirm';
+import Confirm from './Confirm';
 import './Form.css';
 import './styles/Contact.css';
 // import { Element, scroller } from 'react-scroll';
@@ -166,37 +166,30 @@ const Form = () => {
                                 className="Form-Btn"
                                 // >
                                 // onClick={() => onSubmit()}
-                                onClick={() => {
+                                onClick=
+                                {() =>
+                                {
 
-                                    // {
+                                    {
                                     isConfirmationVisible &&
-                                        history.push("/Confirm",
-                                            {
-                                                values: getValues(),
-
-                                                hideConfirmation: hideConfirmation()
-                                            }
-
-                                        );
-
-
-                                    // move();
-                                    // const values = getValues();
-                                    // console.log(values);
-
-                                }
-                                }
-                            // }
+                                    history.push("/Confirm",
+                                        {
+                                            values: getValues(),
+                                        }
+                                    );
+                                    }
+                                    }
+                                    // }
 
 
-                            // onClick= */
-                            // /* {isConfirmationVisible &&
-                            //     <Confirm
-                            //         values={getValues()}
-                            //         hideConfirmation={hideConfirmation}
-                            //     />
-                            // } */}
-
+                                    // onClick= */
+                                    // isConfirmationVisible &&
+                                    // <Confirm
+                                    //     values={getValues()}
+                                    //     hideConfirmation={hideConfirmation}
+                                    // />
+                                } 
+                        // }
                             >
                                 確認画面へ
                             </button>
@@ -206,12 +199,13 @@ const Form = () => {
             </div>
 
             {/* <Element name='scrollTarget' /> */}
-            {/* {isConfirmationVisible &&
+             {/* {isConfirmationVisible &&
                 <Confirm
                 values={getValues()}
                 hideConfirmation={hideConfirmation}
                 />
-            } */}
+            }  */}
+            {/* } */}
 
         </div >
     );
