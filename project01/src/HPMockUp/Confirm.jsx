@@ -5,17 +5,18 @@ import './styles/Contact.css';
 // import { UseFormRegisterReturn } from 'react-hook-form'
 import { useLocation, useHistory, Link } from 'react-router-dom';
 import Contact from './Contact';
+import { useForm } from 'react-hook-form';
 
 
 const Confirm = (
     props
 ) => {
-    const { values, hideConfirmation } = props;
-
+    const { values, hideConfirmation, history } = props;
+    const { getValues } = useForm();
     const location = useLocation();
     const state = location.state;
 
-    const history = useHistory();
+    // const history = useHistory();
 
     // const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
     // const hideConfirmation = () => setIsConfirmationVisible(false)
@@ -136,9 +137,12 @@ const Confirm = (
                             // hideConfirmation
                             // }
 
-                            onClick={() => onClick()}
+                            // onClick={() => onClick()}
 
-                            // onClick={() => history.goBack()}
+                            onClick={() => history.goBack()}
+
+
+                            // onClick={() => history.goBack(props)}
                             value='戻る'
                             className='Form-Btn reset' />
 
