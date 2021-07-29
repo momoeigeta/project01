@@ -4,26 +4,37 @@ import { useHistory } from 'react-router-dom';
 import Confirm from './Confirm';
 import './Form.css';
 import './styles/Contact.css';
+import useFormPersist from 'react-hook-form-persist';
+
 // import { Element, scroller } from 'react-scroll';
 
 
 const Form = () => {
 
-    const { register, handleSubmit, reset, getValues, formState: { errors }, setValue } = useForm({
+    const { register, handleSubmit, reset, getValues, formState: { errors }, setValue, watch } = useForm({
         mode: "all",
     });
+
+    useFormPersist('form', {watch, setValue});
+
     const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
     const hideConfirmation = () => setIsConfirmationVisible(false);
 
-    const onSubmitData = (formData) => {
-        setIsConfirmationVisible(true)
-        localStorage.setItem('value', JSON.stringify(formData))
-        reset()
-    };
+    const onSubmitData = ((formData) => {
+        setIsConfirmationVisible(true);
+        localStorage.setItem('value', JSON.stringify(formData));
+        console.log(formData)
+        // reset()
+
+        // const value = JSON.parse(localStorage.getItem('value'))
+        // console.log(value);
+    }
+    );
+    const value = JSON.parse(localStorage.getItem('value'));
+    console.log(value);
 
     // useEffect(() => {
     //     const defaultValue = JSON.parse(localStorage.getItem('value'))
-    //     setValue('value', defaultValue?.value)
     // }, []
     // )
 
@@ -169,14 +180,15 @@ const Form = () => {
                         </div>
 
                         <div className='btnBox'>
-                            <input
+                            <button
                                 type="button"
                                 onClick={() => reset()}
                                 value="クリア"
                                 className="Form-Btn reset"
-                            />
+                            >クリア</button>
+                            {/* /> */}
 
-                            <button
+                            <input
                                 type="submit"
                                 className="Form-Btn"
                                 // >
@@ -184,15 +196,16 @@ const Form = () => {
                                 onClick=
                                 {() => {
 
-                                    {
-                                        isConfirmationVisible &&
+                                    // const values = getValues();
+                                    // JSON.parse(localStorage.getItem('value'))
+                                    isConfirmationVisible &&
                                             history.push("/Confirm",
                                                 {
-                                                    values:getValues()
+                                                    values: getValues(),
+                                                    // values: localStorage.getItem(0)
                                                 }
-                                            );
-                                    }
-                                }
+                                        )
+                                    
                                     // }
 
 
@@ -203,10 +216,12 @@ const Form = () => {
                                     //     hideConfirmation={hideConfirmation}
                                     // />
                                 }
-                            // }
-                            >
-                                確認画面へ
-                            </button>
+                            }
+                            value="確認画面へ"
+
+                            />
+                                {/* 確認画面へ
+                            </input> */}
                         </div>
                     </form>
                 </div>
