@@ -6,15 +6,18 @@ import './styles/Contact.css';
 import { useLocation, useHistory, Link } from 'react-router-dom';
 import Contact from './Contact';
 import { useForm } from 'react-hook-form';
-
+import { useStateMachine } from "little-state-machine";
+import updateAction from "./updateAction";
 
 const Confirm = (
     props
 ) => {
     const { values, hideConfirmation, history } = props;
     const { getValues } = useForm();
-    const location = useLocation();
-    const state = location.state;
+    // const location = useLocation();
+
+    const { state } = useStateMachine(updateAction);
+    // const state = location.state;
 
     // const history = useHistory();
 
@@ -45,7 +48,7 @@ const Confirm = (
                             <span className="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.name}
+                            {state.name}
                         </p>
                     </div>
 
@@ -56,7 +59,7 @@ const Confirm = (
                             <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
                         </p>
                         <p className="value">
-                            {state.values.company}
+                            {state.company}
                         </p>
                     </div>
 
@@ -66,7 +69,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.department}
+                            {state.department}
                         </p>
                     </div>
 
@@ -76,7 +79,7 @@ const Confirm = (
                             <span className="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.email}
+                            {state.email}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -85,7 +88,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.tel}
+                            {state.tel}
                         </p>
                     </div>
 
@@ -95,7 +98,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.postalCode}
+                            {state.postalCode}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -104,7 +107,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.prefectures}
+                            {state.prefectures}
                         </p>
                     </div>
                     <div class="Form-Item">
@@ -113,7 +116,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.address}
+                            {state.address}
                         </p>
                     </div>
 
@@ -123,7 +126,7 @@ const Confirm = (
                             <span class="caution">*</span>
                         </p>
                         <p className="value">
-                            {state.values.message}
+                            {state.message}
                         </p>
                     </div>
                     <div className='btnBox'>

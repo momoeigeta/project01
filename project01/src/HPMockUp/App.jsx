@@ -1,29 +1,20 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-// import { useState } from 'react';
+import React, { useState } from 'react';
+import { StateMachineProvider, createStore } from "little-state-machine";
+
 import Home from './Home';
 // import Form from './Form';
 import Contact from './Contact';
 import Confirm from './Confirm';
+
+createStore({});
+
+
 const App = () => {
-
-    // const [page, setPage] = useState(1);
-    // const [data, setData] = useState({});
-    // const nextPage = (values) => {
-    //     setPage(page + 1);
-    //     setData(prevData => ({
-    //         ...prevData,
-    //         ...values,
-    //     }));
-    // };
-
-
-
-
-
 
 
     return (
-        <>
+        <StateMachineProvider>
             <BrowserRouter>
                 <div>
                     <Route exact path={'/'} component={Home} />
@@ -50,7 +41,7 @@ const App = () => {
                     />
                 } */}
             </>
-        </>
+        </StateMachineProvider>
     )
 }
 
