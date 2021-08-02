@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import ContactHeader from './ContactHeader';
 import './styles/Contact.css';
 import Form from './Form';
 import Footer from './Footer';
@@ -8,7 +8,7 @@ const Contact = () => {
 
     return (
         <div>
-            <Header />
+            <ContactHeader />
             <div id="contact">
                 <p>弊社に関してのご不明な点はこちらのフォームにて承ります。</p>
                 <p>下記フォームにご記入いただきました皆様の個人情報は、

@@ -1,0 +1,29 @@
+/* EmpHeader */
+.backImg {
+    background-size:  cover;   
+    height: 200px;
+    background-image: url(../images/EmpTop.jpg);
+}
+
+
+/* EmpButton */
+.EmpNBtn {
+    border-radius: 50%;
+    margin: 50px 150px 50px 50px;
+    background-color: rgb(116, 148, 253); 
+	border: none;  /*枠線を消す */
+	cursor: pointer;
+	width:200px;
+    height:200px;
+}
+
+.EmpMBtn {
+	border-radius: 50%;
+    margin: 50px 50px 50px 150px;
+    background-color: rgb(116, 148, 253); 
+	border: none;  /*枠線を消す */
+	cursor: pointer;
+	width:200px;
+    height:200px;
+
+}

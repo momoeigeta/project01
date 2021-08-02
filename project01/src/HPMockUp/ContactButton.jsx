@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const Button = () => {
+const ContactButton = () => {
 
     return (
         <div>
-            <button id="button">
+            <button id="ContactBtn">
                 <Link to="/Contact">
                     <p className="d" style={{ fontSize: "28px" }}>
                         お問い合わせはこちらから</p>
@@ -16,4 +16,4 @@ const Button = () => {
     );
 };
 
-export default Button;
+export default ContactButton;

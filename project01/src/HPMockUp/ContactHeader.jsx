@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Contact.css';
 
-const Header = () => {
+const ContactHeader = () => {
 
     return (
         <header className="header" >
@@ -13,4 +13,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default ContactHeader;

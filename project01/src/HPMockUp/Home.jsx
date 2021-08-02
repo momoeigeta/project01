@@ -1,23 +1,16 @@
-import React from 'react';
-import Header from './Header';
-import Button from './Button';
-import './styles/Contact.css';
-import Footer from './Footer';
+import React from "react";
+import EmpInfoHome from "./EmpInfoHome";
+import ContactHome from "./ContactHome";
+
 
 const Home = () => {
 
     return (
-        <div>
-            <body className="body">
-
-                <div>
-                    <Header />
-                    < Button />
-                </div>
-
-                <Footer />
-            </body>
-        </div >
-    );
+        <>
+            <EmpInfoHome />
+            <ContactHome />
+        </>
+    )
 };
+
 export default Home;
