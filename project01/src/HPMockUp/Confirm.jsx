@@ -1,30 +1,11 @@
-import React, { useState } from 'react';
-// import { useForm } from 'react-hook-form';
+import React from 'react';
 import './styles/Contact.css';
-// import Form from './Form';
-// import { UseFormRegisterReturn } from 'react-hook-form'
-import { useLocation, useHistory, Link } from 'react-router-dom';
-import Contact from './Contact';
-import { useForm } from 'react-hook-form';
-import { useStateMachine } from "little-state-machine";
-import updateAction from "./updateAction";
+import { useLocation } from 'react-router-dom';
 
-const Confirm = (
-    props
-) => {
-    const { values, hideConfirmation, history } = props;
-    const { getValues } = useForm();
-    // const location = useLocation();
-
-    const { state } = useStateMachine(updateAction);
-    // const state = location.state;
-
-    // const history = useHistory();
-
-    // const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
-    // const hideConfirmation = () => setIsConfirmationVisible(false)
-    const [showresults, setShowResults] = useState(true);
-    const onClick = () => setShowResults(false);
+const Confirm = (props) => {
+    const { history } = props;
+    const location = useLocation();
+    const state = location.state;
 
     return (
         <>
@@ -41,130 +22,110 @@ const Confirm = (
 
             <div className="Form">
                 <div className="Form-Item">
-                    <div className='contactBox'>
+                    {/* <div className='contactBox'> */}
+                    <p className="Form-Item-Label" >
+                        お名前
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.name}
+                    </p>
+                    {/* </div> */}
 
-                        <p className="Form-Item-Label" >
-                            お名前
-                            <span className="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.name}
-                        </p>
-                    </div>
+                    {/* <div class="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        会社名・法人名・団体名
+                        <span className="caution">*</span>
+                        <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
+                    </p>
+                    <p className="value">
+                        {state.values.company}
+                    </p>
+                    {/* </div> */}
+                    {/* <div class="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        部署・役職等
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.department}
+                    </p>
+                    {/* </div> */}
 
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            会社名・法人名・団体名
-                            <span className="caution">*</span>
-                            <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
-                        </p>
-                        <p className="value">
-                            {state.company}
-                        </p>
-                    </div>
+                    {/* <div className="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        メールアドレス
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.email}
+                    </p>
+                    {/* </div> */}
 
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            部署・役職等
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.department}
-                        </p>
-                    </div>
+                    {/* <div class="Form-Item"> */}
+                    <p class="Form-Item-Label">
+                        電話番号
+                        <span class="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.tel}
+                    </p>
+                    {/* </div> */}
 
-                    <div className="Form-Item">
-                        <p className="Form-Item-Label">
-                            メールアドレス
-                            <span className="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.email}
-                        </p>
-                    </div>
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            電話番号
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.tel}
-                        </p>
-                    </div>
+                    {/* <div className="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        郵便番号
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.postalCode}
+                    </p>
+                    {/* </div> */}
+                    {/* <div className="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        都道府県
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.prefectures}
+                    </p>
+                    {/* </div> */}
+                    {/* <div className="Form-Item"> */}
+                    <p className="Form-Item-Label">
+                        ご住所
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.address}
+                    </p>
+                    {/* </div> */}
 
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            郵便番号
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.postalCode}
-                        </p>
-                    </div>
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            都道府県
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.prefectures}
-                        </p>
-                    </div>
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label">
-                            ご住所
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.address}
-                        </p>
-                    </div>
+                    {/* <div class="Form-Item"> */}
+                    <p className="Form-Item-Label isMsg">
+                        メッセージ本文
+                        <span className="caution">*</span>
+                    </p>
+                    <p className="value">
+                        {state.values.message}
+                    </p>
+                    {/* </div> */}
+                </div>
 
-                    <div class="Form-Item">
-                        <p class="Form-Item-Label isMsg">
-                            メッセージ本文
-                            <span class="caution">*</span>
-                        </p>
-                        <p className="value">
-                            {state.message}
-                        </p>
-                    </div>
-                    <div className='btnBox'>
-                        {/* <Link to="/Contact"
-                        
-                        > */}
-                        <input
-                            type='button'
-                            // onClick={() => 
-
-                            // hideConfirmation
-                            // }
-
-                            // onClick={() => onClick()}
-
-                            onClick={() => history.goBack()}
-
-
-                            // onClick={() => history.goBack(props)}
-                            value='戻る'
-                            className='Form-Btn reset' />
-
-                        {/* {showresults ? null : null} */}
-
-
-                        {/* </Link> */}
-                        <button
-                            type="submit"
-                            className="Form-Btn"
-                        >
-                            送信する
-                        </button>
-
-                    </div>
+                <div className='btnBox'>
+                    <input
+                        type='button'
+                        onClick={() => history.goBack()}
+                        value='戻る'
+                        className='Form-Btn reset' />
+                    <input
+                        type="submit"
+                        className="Form-Btn"
+                        value="送信する"
+                    />
                 </div>
             </div>
         </>
-    )
+    );
 };
 
 export default Confirm;
