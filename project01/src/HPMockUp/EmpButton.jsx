@@ -6,13 +6,16 @@ const EmpButton = () => {
 
     return (
         <>
-            <button className="EmpNBtn">
-                <Link to="/NewGrad">
-                    <p>新卒採用</p>
-                    <p>新卒採用行っております</p>
-                </Link>
+            <Link to="/NewGrad">
 
-            </button>
+                <button className="EmpNBtn">
+                    {/* <Link to="/NewGrad"> */}
+                    <p className="white">新卒採用</p>
+                    <p>新卒採用行っております</p>
+                    {/* </Link> */}
+                </button>
+            </Link>
+
 
             <button className="EmpMBtn">
                 <Link to="/MidCareer">

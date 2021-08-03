@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactHeader from './ContactHeader';
 import './styles/Contact.css';
-import Form from './Form';
+import ContactForm from './ContactForm';
 import Footer from './Footer';
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
                 <p>また、ご記入いただきました個人情報は、お問い合わせへご回答するのみに利用する目的で収集いたします。</p>
                 <p className="caution">※全て必須項目です。</p>
             </div>
-            <Form />
+            <ContactForm />
             <Footer />
         </div>
     );

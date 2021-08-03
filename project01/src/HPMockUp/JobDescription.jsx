@@ -1,35 +1,11 @@
 import React from 'react';
 import './styles/Emp.css';
-import JobDescription from './JobDescription';
-import NewGradForm from './NewGradForm';
 
-
-const NewGrad = () => {
+const JobDescription = () => {
 
     return (
         <>
-            <header className="header" >
-                <div className="backImg">
-
-                    <h1>新卒採用</h1>
-                </div>
-            </header>
-            <p className="shadow">
-                <span className="lineshadow">
-                    新卒採用について
-                </span>
-            </p>
-            <p className="caution">現在、2021年度の募集を行っております。</p>
-
-            <p className="shadow">
-                <span className="lineshadow">
-                    募集要項
-                </span>
-            </p>
-
-            <JobDescription />
-
-            {/* <table border="1">
+            <table border="1">
                 <tr>
                     <th>募集職種</th>
                     <td>エンジニア職</td>
@@ -88,54 +64,10 @@ const NewGrad = () => {
                         </ul>
                     </td>
                 </tr>
-            </table> */}
-
-            <p className="shadow">
-                <span className="lineshadow">
-                    採用フロー
-                </span>
-            </p>
-            <h3>
-                エントリー
-            </h3>
-            <ul className="left">
-                <li>フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。</li>
-                <li>下記、マイナビからも応募が可能です。</li>
-                <button className="mynaviBtn" >
-
-                </button>
-
-            </ul>
-
-            <h3>会社説明会兼一次選考会</h3>
-            <ul className="left">
-                <li>これからＩＴ業界を目指す方・興味を持ち始めた方も是非ご応募ください！</li>
-                <li>希望者にはそのまま一次選考（筆記試験・面接）も受けていただくことが可能です。</li>
-            </ul>
-
-            <h3>最終選考</h3>
-            <ul className="left">
-                <li>個人面接を受けていただきます。</li>
-            </ul>
-
-            <h3>内定</h3>
-            <ul className="left">
-                <li>内定までは、2週間前後を予定しています。</li>
-            </ul>
-
-            <h3>持ち物</h3>
-            <ul className="left">
-                <li>筆記用具、写真付履歴書、卒業見込証明書、成績証明書、健康診断証明書</li>
-            </ul>
-            <p className="shadow">
-                <span className="lineshadow">
-                    応募フォーム
-                </span>
-            </p>
-            <NewGradForm />
+            </table>
 
         </>
     );
 };
 
-export default NewGrad;
+export default JobDescription;

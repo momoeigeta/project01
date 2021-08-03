@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import './styles/Contact.css';
 import useFormPersist from 'react-hook-form-persist';
 
-const Form = () => {
+const ContactForm = () => {
 
     const { register, handleSubmit, reset, getValues, formState: { errors }, setValue, watch } = useForm({
         mode: "all",
@@ -14,7 +14,7 @@ const Form = () => {
     useFormPersist('form', { watch, setValue });
 
     const onSubmitData = (() => {
-        history.push("./Confirm",
+        history.push("./ContactConfirm",
             { values: getValues() }
         );
         reset();
@@ -178,4 +178,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default ContactForm;

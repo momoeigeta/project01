@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Contact.css';
 import { useLocation } from 'react-router-dom';
 
-const Confirm = (props) => {
+const MidCareerConfirm = (props) => {
     const { history } = props;
     const location = useLocation();
     const state = location.state;
@@ -11,9 +11,9 @@ const Confirm = (props) => {
         <>
             <div>
                 <header className="header" >
-                    <div className="back">
+                    <div className="backImg">
 
-                        <h1 className="f">お問い合わせ</h1>
+                        <h1 className="f">中途採用応募フォーム</h1>
                         <h1 className="f">確認画面</h1>
 
                     </div>
@@ -128,4 +128,4 @@ const Confirm = (props) => {
     );
 };
 
-export default Confirm;
+export default MidCareerConfirm;
