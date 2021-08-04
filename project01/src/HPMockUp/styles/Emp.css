@@ -15,6 +15,7 @@
 	cursor: pointer;
 	width:200px;
     height:200px;
+    padding: 0;
 }
 
 .EmpNBtn .white {
@@ -22,13 +23,21 @@
     text-align: center;
     padding: 0px;
     margin: 5px;
+    height: 30px;
+    font-size: 25px;
 }
 .EmpNBtn p {
     color: red;
     margin: 5px;
     padding: 0px;
-
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgb(73, 60, 60);
 }
+
+.EmpNBtn img {
+    width: 50px;
+    height: 50px;
+} 
 
 .EmpMBtn {
 	border-radius: 50%;
@@ -38,8 +47,81 @@
 	cursor: pointer;
 	width:200px;
     height:200px;
-
 }
+
+.EmpMBtn .white {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.EmpMBtn p {
+    color: red;
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgb(73, 60, 60);
+}
+
+.EmpMBtn img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.char p {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+
+.shape1 {
+    margin:  0;                     /* デフォルトCSS打ち消し */
+    position:  relative;            /* 位置調整 */
+    margin-bottom: 15px;            /* 周りの余白指定 */
+    padding-top: 50px;              /* 余白指定 */
+    padding-left: 40px;             /* 余白指定 */
+}
+
+.shape1::after {
+    content:  '';                   /* 空白の要素を作る */
+    width: 750px;                       /* 幅指定 */
+    height: 50px;                      /* 高さ指定 */
+    border-style: solid;   
+    background-color: #b4e4f8;
+    border-color: #b4e4f8;  /* 三角を作る */
+    position:  absolute;            /* 位置調整 */
+    z-index:  -1;                   /* 重なり調整 */
+    top: -45px;                     /* 位置調整 */
+    left: 395px;                     /* 位置調整 */
+}
+
+.inta {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+
+
+
+
+.char hr {
+    text-align: right;
+    width: 75%;
+    margin-right: 0;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
 
 /* NewGrad */
 .shadow {
@@ -58,6 +140,17 @@
 table {
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
+}
+
+table th {
+padding: 10px;
+background-color: rgb(183, 231, 252);
+/* font-weight: normal; */
+}
+
+table th, table td {
+    border: solid 1px black;
 }
 
 table li {
@@ -67,6 +160,7 @@ table li {
 
 table p {
     text-align: left;
+    margin-bottom: 0px;
 }
 
 h3 {
@@ -85,7 +179,17 @@ h3 {
 }
 
 .mynaviBtn {
-    background-image: url("../images/mynaviBtn.png");
-    width: 300px;
-    height: 100px;
+    padding: 0;
+    margin: 0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.mynaviBtn img {
+    width: 150px;
+    height: 50px;
 }

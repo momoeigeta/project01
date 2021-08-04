@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Emp.css';
 import JobDescription from './JobDescription';
 import NewGradForm from './NewGradForm';
-
+import mynaviBtn from './images/mynaviBtn.png';
 
 const NewGrad = () => {
 
@@ -27,9 +27,9 @@ const NewGrad = () => {
                 </span>
             </p>
 
-            <JobDescription />
+            {/* <JobDescription /> */}
 
-            {/* <table border="1">
+            <table >
                 <tr>
                     <th>募集職種</th>
                     <td>エンジニア職</td>
@@ -44,7 +44,7 @@ const NewGrad = () => {
                     <th>応募資格</th>
                     <td colspan="2">
                         <p>2021年3月に4年制大学または大学院を卒業・修了見込みであり、就業経験のないこと</p>
-                        <p>※既卒3年以内の方も応募可能</p>
+                        <span>※既卒3年以内の方も応募可能</span>
                     </td>
                 </tr>
                 <tr>
@@ -88,7 +88,7 @@ const NewGrad = () => {
                         </ul>
                     </td>
                 </tr>
-            </table> */}
+            </table>
 
             <p className="shadow">
                 <span className="lineshadow">
@@ -102,7 +102,7 @@ const NewGrad = () => {
                 <li>フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。</li>
                 <li>下記、マイナビからも応募が可能です。</li>
                 <button className="mynaviBtn" >
-
+                    <img src={mynaviBtn} />
                 </button>
 
             </ul>
