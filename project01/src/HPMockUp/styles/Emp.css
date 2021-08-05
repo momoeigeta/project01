@@ -80,6 +80,17 @@
     padding-left: 40px;
 }
 
+.char hr {
+    text-align: right;
+    width: 75%;
+    margin-right: 0;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+
 
 .shape1 {
     margin:  0;                     /* デフォルトCSS打ち消し */
@@ -94,8 +105,8 @@
     width: 750px;                       /* 幅指定 */
     height: 50px;                      /* 高さ指定 */
     border-style: solid;   
-    background-color: #b4e4f8;
-    border-color: #b4e4f8;  /* 三角を作る */
+    background-color: #daedf5;
+    border-color: #daedf5;  
     position:  absolute;            /* 位置調整 */
     z-index:  -1;                   /* 重なり調整 */
     top: -45px;                     /* 位置調整 */
@@ -108,19 +119,143 @@
     margin-left: 60px;
 }
 
-
-
-
-
-.char hr {
-    text-align: right;
-    width: 75%;
-    margin-right: 0;
-    border: none;
-    height: 1px;
-    color: black;
-    background-color: black;
+.shape2 {
+    margin: 0;
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    padding-left: 40px;
 }
+
+.shape2::after {
+    content:  '';                   /* 空白の要素を作る */
+    width: 150px;                       /* 幅指定 */
+    height: 60px;                      /* 高さ指定 */
+    border-style: solid;   
+    background-color: #daedf5;
+    border-color: #daedf5;  
+    position:  absolute;            /* 位置調整 */
+    z-index:  -1;                   /* 重なり調整 */
+    top: -85px;                     /* 位置調整 */
+    left: 30px;                     /* 位置調整 */
+}
+
+.shape3 {
+    margin: 0;
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.shape3::after {
+    content:  '';                   /* 空白の要素を作る */
+    width: 150px;                       /* 幅指定 */
+    height: 60px;                      /* 高さ指定 */
+    border-style: solid ;   
+    border-width: 1px;
+    border-color: #050607;  
+    position:  absolute;            /* 位置調整 */
+    z-index:  -2;                   /* 重なり調整 */
+    top: -130px;                     /* 位置調整 */
+    left: 125px;     
+}
+
+
+
+#cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 1000px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+#cardlayout-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* カードレイアウトの説明文部分 */
+.card-text-tax {
+    margin: 0;
+    padding: 1em;
+}
+
+/* カードレイアウトを1カラムで配置 */
+.card-list {
+    margin: 0.5em auto;
+    padding: 0;
+    width: 96%;
+    /* background: #f0f0f0; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+@media all and (min-width: 768px) {
+    .card-list {
+        margin: 0.5em 0;
+        width: calc(96% / 2); /* 96%幅を2で割るという指定 */
+    }
+}
+
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+@media all and (min-width: 992px) {
+    .card-list {
+        width: calc(90% / 3); /* 96%幅を3で割るという指定 */
+}
+    
+/* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+    #cardlayout-wrap::after{
+        content: "";
+        display: block;
+        width: calc(96% / 3);
+    }
+}
+
+#cardlayout-wrap .box {
+    position: relative;
+} 
+
+#cardlayout-wrap .box .card-title1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 2px silver;
+    font-size: 34px;
+}
+
+#cardlayout-wrap .box .card-title2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+    text-shadow: 2px 2px 2px silver;
+    font-size: 34px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
 
 
 /* NewGrad */

@@ -65,7 +65,7 @@ const MidCareerConfirm = (props) => {
                     {/* <div class="Form-Item"> */}
                     <p class="Form-Item-Label">
                         電話番号
-                        <span class="caution">*</span>
+                        {/* <span class="caution">*</span> */}
                     </p>
                     <p className="value">
                         {state.values.tel}
@@ -75,7 +75,7 @@ const MidCareerConfirm = (props) => {
                     {/* <div className="Form-Item"> */}
                     <p className="Form-Item-Label">
                         郵便番号
-                        <span className="caution">*</span>
+                        {/* <span className="caution">*</span> */}
                     </p>
                     <p className="value">
                         {state.values.postalCode}
@@ -84,7 +84,7 @@ const MidCareerConfirm = (props) => {
                     {/* <div className="Form-Item"> */}
                     <p className="Form-Item-Label">
                         都道府県
-                        <span className="caution">*</span>
+                        {/* <span className="caution">*</span> */}
                     </p>
                     <p className="value">
                         {state.values.prefectures}

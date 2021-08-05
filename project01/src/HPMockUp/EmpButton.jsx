@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./styles/Emp.css";
 import NewGrad from './images/NewGrad.png';
 import MidCareer from './images/MidCareer.png';
+import Person from './images/Person.jpg';
 
 const EmpButton = () => {
 
@@ -31,8 +32,39 @@ const EmpButton = () => {
             <div class="shape1" />
             <p className="inta">社員インタビュー</p>
             <div className="shape2" />
-        </>
+            <div className="shape3" />
 
+
+            <div id="cardlayout-wrap">
+                <section class="card-list">
+                    <div className="box">
+                        <figure class="card-figure"><img src={Person} /></figure>
+                        <h2 className="card-title1">職種</h2>
+                        <h2 className="card-title2">名前</h2>
+                    </div>
+                    <p class="card-text-tax">インタビュー要約</p>
+                </section>
+
+                <section class="card-list">
+                    <div className="box">
+                        <figure class="card-figure"><img src={Person} /></figure>
+                        <h2 class="card-title1">職種</h2>
+                        <h2 className="card-title2">名前</h2>
+                    </div>
+                    <p class="card-text-tax">インタビュー要約</p>
+                </section>
+
+                <section class="card-list">
+                    <div className="box">
+                        <figure class="card-figure"><img src={Person} /></figure>
+                        <h2 class="card-title1">職種</h2>
+                        <h2 className="card-title2">名前</h2>
+                    </div>
+                    <p class="card-text-tax">インタビュー要約</p>
+                </section>
+
+            </div>
+        </>
     );
 };
 

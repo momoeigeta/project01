@@ -47,9 +47,10 @@ p {
 
 .d {
 margin: 10px 20px 10px 20px;
-text-shadow: 1px 2px 2px white;
+text-shadow: 2px 3px 2px white;
 line-height: 1;
 font-weight: bold;
+color: black;
 }
 
 #contact {
