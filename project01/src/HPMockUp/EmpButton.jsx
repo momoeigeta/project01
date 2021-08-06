@@ -8,22 +8,28 @@ import Person from './images/Person.jpg';
 const EmpButton = () => {
 
     return (
-        <>
-            <Link to="/NewGrad">
-                <button className="EmpNBtn">
-                    <p className="white">新卒採用</p>
-                    <img src={NewGrad} />
-                    <p>新卒採用行っております</p>
-                </button>
-            </Link>
+        <div className="Emp">
+            <div className="EmpBtn">
+                <Link to="/NewGrad">
+                    <button
+                        // className="EmpNBtn"
+                    >
+                        <p className="white">新卒採用</p>
+                        <img src={NewGrad} />
+                        <p>新卒採用行っております</p>
+                    </button>
+                </Link>
 
-            <Link to="/MidCareer">
-                <button className="EmpMBtn">
-                    <p className="white">中途採用</p>
-                    <img src={MidCareer} />
-                    <p>中途採用行っております</p>
-                </button>
-            </Link>
+                <Link to="/MidCareer">
+                    <button
+                        // className="EmpMBtn"
+                    >
+                        <p className="white">中途採用</p>
+                        <img src={MidCareer} />
+                        <p>中途採用行っております</p>
+                    </button>
+                </Link>
+            </div>
 
             <div className="char">
                 <p>経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
@@ -42,7 +48,7 @@ const EmpButton = () => {
                         <h2 className="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
-                    <p class="card-text-tax">インタビュー要約</p>
+                    <p class="card-text-tax">インタビュー要約ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                 </section>
 
                 <section class="card-list">
@@ -64,7 +70,7 @@ const EmpButton = () => {
                 </section>
 
             </div>
-        </>
+        </div>
     );
 };
 

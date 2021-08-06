@@ -7,18 +7,51 @@
 
 
 /* EmpButton */
-.EmpNBtn {
+
+.Emp {
+    margin-bottom: 50px;
+}
+
+.EmpBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 各アイテムを均等に配置し,各アイテムの両側に半分の大きさの間隔を置く */
+}
+
+/* .EmpNBtn {
+    border-radius: 50%;
+    margin: 50px 50px 50px 50px;
+    background-color: rgb(116, 148, 253); 
+	border: none;   */
+    /*枠線を消す */
+	/* cursor: pointer;
+	width:200px;
+    height:200px;
+    padding: 0;
+} */
+
+.EmpBtn button {
     border-radius: 50%;
     margin: 50px 50px 50px 50px;
     background-color: rgb(116, 148, 253); 
 	border: none;  /*枠線を消す */
+    border: solid rgb(92, 128, 248);
 	cursor: pointer;
 	width:200px;
     height:200px;
     padding: 0;
 }
 
-.EmpNBtn .white {
+
+/* .EmpNBtn .white {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    height: 30px;
+    font-size: 25px;
+} */
+.EmpBtn .white {
     color: white;
     text-align: center;
     padding: 0px;
@@ -26,7 +59,16 @@
     height: 30px;
     font-size: 25px;
 }
-.EmpNBtn p {
+
+
+/* .EmpNBtn p {
+    color: red;
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgb(73, 60, 60);
+} */
+.EmpBtn p {
     color: red;
     margin: 5px;
     padding: 0px;
@@ -34,16 +76,22 @@
     text-shadow: 1px 1px 2px rgb(73, 60, 60);
 }
 
-.EmpNBtn img {
+
+/* .EmpNBtn img {
     width: 50px;
     height: 50px;
-} 
+}  */
+.EmpBtn img {
+    width: 50px;
+    height: 50px;
+}
 
-.EmpMBtn {
+
+/* .EmpMBtn {
 	border-radius: 50%;
-    margin: 50px 50px 50px 150px;
+    margin: 50px 50px 50px 50px;
     background-color: rgb(116, 148, 253); 
-	border: none;  /*枠線を消す */
+	border: none;  
 	cursor: pointer;
 	width:200px;
     height:200px;
@@ -69,7 +117,7 @@
 .EmpMBtn img {
     height: 50px;
     width: 50px;
-}
+} */
 
 
 .char p {
@@ -109,8 +157,11 @@
     border-color: #daedf5;  
     position:  absolute;            /* 位置調整 */
     z-index:  -1;                   /* 重なり調整 */
-    top: -45px;                     /* 位置調整 */
-    left: 395px;                     /* 位置調整 */
+    top: -45px;   
+    left: 29%;                
+    /* left: 395px;     */
+    
+    
 }
 
 .inta {
@@ -165,7 +216,7 @@
 
 #cardlayout-wrap {
     position: relative;
-    display: -webkit-box;
+    display: -webkit-box;     /* 横並び */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -196,6 +247,7 @@
 .card-text-tax {
     margin: 0;
     padding: 1em;
+    /* text-align: left; */
 }
 
 /* カードレイアウトを1カラムで配置 */
@@ -253,11 +305,6 @@
 }
 
 
-
-
-
-
-
 /* NewGrad */
 
 .lineshadow {
@@ -269,7 +316,6 @@
     font-size: 24px;
     text-align: left;
     text-shadow: 1px 2px 2px rgb(73, 60, 60);
-    /* margin-left: 0; */
 }
 
 .lineshadow hr {
@@ -288,21 +334,21 @@
 .lineshadow .hr1 {
     width: 235px;
     /* top: 35px; */
-    top: 10vh;
+    top: 6vh;
 }
 .lineshadow .hr2 {
     width: 145px;
     /* top: 145px; */
-    top: 10vh;
+    top: 6vh;
 }
 .lineshadow .hr3 {
     width: 165px;
     /* top: 890px; */
-    top: 10vh;
+    top: 6vh;
 }
 .lineshadow .hr4 {
     width: 190px;
-    top: 10vh;
+    top: 6vh;
 }
 
 

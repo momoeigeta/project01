@@ -7,8 +7,10 @@ const EmpInfoHome = () => {
 
     return (
         <div>
-            <EmpHeader />
-            <EmpButton />
+            <body className="body">
+                <EmpHeader />
+                <EmpButton />
+            </body>
         </div>
     )
 };

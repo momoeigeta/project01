@@ -59,7 +59,9 @@ const NewGradForm = () => {
                                 <span className="caution">*</span>
                                 <input type="text" id="department" name="department"
                                     className="Form-Item-Input"
-                                    {...register("department", { required: true })}
+                                    {...register("department", 
+                                        { required: true }
+                                    )}
                                 />
                                 {errors.department &&
                                     <p className="error">部署・役職等を入力してください</p>}
@@ -85,16 +87,16 @@ const NewGradForm = () => {
 
                         <div className="Form-Item-Label">
                             <p htmlFor="tel">電話番号
-                                {/* <span className="caution">*</span> */}
+                                <span className="caution">*</span>
                                 <input type="tel" id="tel" name="tel"
                                     className="Form-Item-Input"
                                     {...register("tel", {
-                                        // required: true,
+                                        required: true,
                                         pattern: /^[0-9]+$/i
                                     })}
                                 />
-                                {/* {errors.tel?.type === "required" &&
-                                    <p className="error">電話番号を入力してください</p>} */}
+                                {errors.tel?.type === "required" &&
+                                    <p className="error">電話番号を入力してください</p>}
                                 {errors.tel?.type === "pattern" &&
                                     <p className="error">半角数字で入力してください</p>}
                             </p>
@@ -102,16 +104,16 @@ const NewGradForm = () => {
 
                         <div className="Form-Item-Label">
                             <p htmlFor="postalCode">郵便番号
-                                {/* <span className="caution">*</span> */}
+                                <span className="caution">*</span>
                                 <input type="postalCode" id="postalCode" name="postalCode"
                                     className="Form-Item-Input"
                                     {...register("postalCode", {
-                                        // required: true,
+                                        required: true,
                                         pattern: /^\d{3}-\d{4}$/,
                                     })}
                                 />
-                                {/* {errors.postalCode?.type === "required" &&
-                                    <p className="error">郵便番号を入力してください</p>} */}
+                                {errors.postalCode?.type === "required" &&
+                                    <p className="error">郵便番号を入力してください</p>}
                                 {errors.postalCode?.type === "pattern" &&
                                     <p className="error">ハイフンを入れて正しい郵便番号を入力してください</p>}
                             </p>
@@ -119,15 +121,15 @@ const NewGradForm = () => {
 
                         <div className="Form-Item-Label">
                             <p htmlFor="prefectures">都道府県
-                                {/* <span className="caution">*</span> */}
+                                <span className="caution">*</span>
                                 <input type="address-level1" id="prefectures" name="prefectures"
                                     className="Form-Item-Input"
                                     {...register("prefectures",
-                                        // { required: true }
+                                        { required: true }
                                     )}
                                 />
-                                {/* {errors.prefectures &&
-                                    <p className="error">都道府県を入力してください</p>} */}
+                                {errors.prefectures &&
+                                    <p className="error">都道府県を入力してください</p>}
                             </p>
                         </div>
 
