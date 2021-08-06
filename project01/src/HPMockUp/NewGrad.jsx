@@ -14,20 +14,24 @@ const NewGrad = () => {
                     <h1>新卒採用</h1>
                 </div>
             </header>
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     新卒採用について
-                </span>
-            </p>
+                    {/* </span> */}
+                </p>
+                <hr className="hr1"></hr>
+            </div>
             <p className="caution">現在、2021年度の募集を行っております。</p>
-
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     募集要項
-                </span>
-            </p>
-
-            {/* <JobDescription /> */}
+                    {/* </span> */}
+                </p>
+                <hr className="hr2"></hr>
+                {/* <JobDescription /> */}
+            </div>
 
             <table >
                 <tr>
@@ -89,12 +93,14 @@ const NewGrad = () => {
                     </td>
                 </tr>
             </table>
-
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     採用フロー
-                </span>
-            </p>
+                    {/* </span> */}
+                </p>
+                <hr className="hr3"></hr>
+            </div>
             <h3>
                 エントリー
             </h3>
@@ -127,13 +133,16 @@ const NewGrad = () => {
             <ul className="left">
                 <li>筆記用具、写真付履歴書、卒業見込証明書、成績証明書、健康診断証明書</li>
             </ul>
-            <p className="shadow">
-                <span className="lineshadow">
-                    応募フォーム
-                </span>
-            </p>
-            <NewGradForm />
 
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
+                    応募フォーム
+                    {/* </span> */}
+                </p>
+                <hr className="hr4"></hr>
+            </div>
+            <NewGradForm />
         </>
     );
 };

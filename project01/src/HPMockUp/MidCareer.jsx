@@ -12,19 +12,23 @@ const MidCareer = () => {
                     <h1>中途採用</h1>
                 </div>
             </header>
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     中途採用について
-                </span>
-            </p>
+                    {/* </span> */}
+                </p>
+                <hr className="hr1"></hr>
+            </div>
             <p className="caution">現在、募集を行っております。</p>
-
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     募集要項
-                </span>
-            </p>
-
+                    {/* </span> */}
+                </p>
+                <hr className="hr2"></hr>
+            </div>
             <table border="1">
                 <tr>
                     <th>募集職種</th>
@@ -78,12 +82,14 @@ const MidCareer = () => {
                     </td>
                 </tr>
             </table>
-
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     採用フロー
-                </span>
-            </p>
+                    {/* </span> */}
+                </p>
+                <hr className="hr3"></hr>
+            </div>
             <h3>
                 エントリー
             </h3>
@@ -111,11 +117,14 @@ const MidCareer = () => {
             <ul className="left">
                 <li>筆記用具、写真付履歴書、職務経歴書</li>
             </ul>
-            <p className="shadow">
-                <span className="lineshadow">
+            <div className="lineshadow">
+                <p className="shadow">
+                    {/* <span className="lineshadow"> */}
                     応募フォーム
-                </span>
-            </p>
+                    {/* </span> */}
+                </p>
+                <hr className="hr4"></hr>
+            </div>
             <MidCareerForm />
 
         </>

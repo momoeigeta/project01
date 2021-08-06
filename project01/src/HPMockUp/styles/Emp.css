@@ -259,18 +259,52 @@
 
 
 /* NewGrad */
+
+.lineshadow {
+    margin-left: 0;
+    position: relative;
+}
+
 .shadow {
     font-size: 24px;
     text-align: left;
     text-shadow: 1px 2px 2px rgb(73, 60, 60);
+    /* margin-left: 0; */
 }
 
-.lineshadow {
-    padding: 5px;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 3px 3px -3px;
-
+.lineshadow hr {
+    position: absolute;
+    text-align: left;
+    margin-left: 0;
+    border: none;
+    height: 1px;
+    background-color: black;
+    box-shadow: 2px 1px 3px rgb(73, 60, 60);
+    /* bottom: 100px; */
+    /* width: 17%; */
+    /* color: black; */
 }
+
+.lineshadow .hr1 {
+    width: 235px;
+    /* top: 35px; */
+    top: 10vh;
+}
+.lineshadow .hr2 {
+    width: 145px;
+    /* top: 145px; */
+    top: 10vh;
+}
+.lineshadow .hr3 {
+    width: 165px;
+    /* top: 890px; */
+    top: 10vh;
+}
+.lineshadow .hr4 {
+    width: 190px;
+    top: 10vh;
+}
+
 
 table {
     margin-left: auto;
