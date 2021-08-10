@@ -1,0 +1,78 @@
+.header {
+    position: relative;
+    z-index: 998;
+    justify-content: space-evenly;
+}
+
+.header img {
+    width: 120px;
+    height: 60px;
+    margin: 0 100px 0 100px;
+}
+
+.header .topline {
+    height: 25px;
+    background-color: rgb(94, 94, 126);
+}
+
+.header .has-child {
+width: 100px;
+height: 50px;
+position: relative;
+display: inline-block;
+line-height: 50px;
+
+}
+
+.header .ver::after {
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:50px;
+    background-color:black;
+    position:absolute;
+    right:-55px;
+}
+
+
+.header ul {
+    list-style: none;
+	display: flex;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.header ul ul {
+    display: block;
+}
+
+.header ul li {
+    position: relative;
+}
+
+.header ul li a {
+    display: block;
+  text-decoration: none;
+  color: #999;
+  padding:20px 35px;
+  transition:all .3s;
+}
+
+.header ul li li a {
+    padding:10px 35px;
+}
+
+.header li .has-child ul {
+    position: absolute;
+    left:0;
+    top:62px;
+    z-index: 4;
+      /*形状を指定*/
+    background:#28BFE7;
+    width:180px;
+      /*はじめは非表示*/
+    visibility: hidden;
+    opacity: 0;
+      /*アニメーション設定*/
+    transition: all .3s;
+}
