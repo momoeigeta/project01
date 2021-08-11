@@ -1,52 +1,56 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import MidCareer from './images/MidCareer.png';
 import Force from './images/Force.png';
+
 import './styles/Header.css';
 
 const Header = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
-
-
     return (
         <>
-            <div className="header">
+            <div id="menubar">
+
+
+                <nav>
                 <div className="topline">
-
                 </div>
-                <ul>
-                    <li className="has-child ver"
-                        onClick={() => setIsOpen(isOpen ? false : true)} >
-                        企業情報
-                    </li>
-                    <li className="has-child"
-                        onClick={() => setIsOpen(isOpen ? false : true)} >
-                        採用情報
-                    </li>
-                    <img src={Force}></img>
-                    <li className="has-child ver"
-                        onClick={() => setIsOpen(isOpen ? false : true)} >
-                        アクセス
-                    </li>
-                    <li className="has-child"
-                        onClick={() => setIsOpen(isOpen ? false : true)} >
-                        お問い合わせ
-                    </li>
 
-                    
+                    <ul>
+                        <li class="has-child"><a href="#">企業情報</a>
+                            <ul>
+                                <li><a href="#">ごあいさつ</a></li>
+                                <li><a href="#">事業内容</a></li>
+                                <li><a href="#">会社概要</a></li>
+                            </ul>
+                            <div className="ver1"></div>
 
+                        </li>
 
-                    {isOpen &&
-                        <ul>
-                            <li><Link to="/MidCareer">中途採用</Link></li>
-                            <li><Link to="/NewGrad">新卒採用</Link></li>
-                        </ul>
-                    }
-                </ul>
+                        <li class="has-child"><Link to="/EmpInfoHome">採用情報</Link>
+                            <ul>
+                                <li><Link to="/MidCareer">中途採用</Link></li>
+                                <li><Link to="/NewGrad">新卒採用</Link></li>
+                            </ul>
+                        </li>
+                        <Link to="/">
+                            <img src={Force}></img>
+                        </Link>
+                        <li><a href="#">アクセス</a>
+                            <div className="ver2"></div>
 
+                        </li>
+
+                        <li>
+                            <Link to="/ContactHome">
+                                お問い合わせ
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+
         </>
+
     )
 };
 

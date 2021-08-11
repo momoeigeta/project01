@@ -3,11 +3,13 @@ import './styles/Emp.css';
 import JobDescription from './JobDescription';
 import NewGradForm from './NewGradForm';
 import mynaviBtn from './images/mynaviBtn.png';
+import Header from './Header';
 
 const NewGrad = () => {
 
     return (
         <>
+            <Header />
             <header className="header" >
                 <div className="backImg">
 

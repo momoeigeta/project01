@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Contact.css';
 import { useLocation } from 'react-router-dom';
+import Header from './Header';
 
 const MidCareerConfirm = (props) => {
     const { history } = props;
@@ -10,6 +11,7 @@ const MidCareerConfirm = (props) => {
     return (
         <>
             <div>
+                <Header />
                 <header className="header" >
                     <div className="backImg">
 

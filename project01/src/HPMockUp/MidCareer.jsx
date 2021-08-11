@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import MidCareerForm from './MidCareerForm';
 import './styles/Emp.css';
 
@@ -6,6 +7,7 @@ const MidCareer = () => {
 
     return (
         <>
+            <Header />
             <header className="header" >
                 <div className="backImg">
 

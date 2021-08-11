@@ -1,78 +1,215 @@
-.header {
-    position: relative;
-    z-index: 998;
-    justify-content: space-evenly;
+nav{
+	/* background:#333; */
+	/* color:#fff; */
+	text-align: center;
+    position:relative;
+    z-index:999;
+    /* height: 200px; */
 }
 
-.header img {
-    width: 120px;
+nav .topline {
+		height: 25px;
+		background-color: rgb(94, 94, 126);
+	}
+
+nav img {
+	width: 120px;
     height: 60px;
     margin: 0 100px 0 100px;
 }
 
-.header .topline {
-    height: 25px;
-    background-color: rgb(94, 94, 126);
-}
-
-.header .has-child {
-width: 100px;
-height: 50px;
-position: relative;
-display: inline-block;
-line-height: 50px;
-
-}
-
-.header .ver::after {
-    content:"";
-    display:inline-block;
-    width:1px;
-    height:50px;
-    background-color:black;
-    position:absolute;
-    right:-55px;
-}
-
-
-.header ul {
-    list-style: none;
+/*ナビゲーションを横並びに*/
+nav ul{
+	list-style: none;
 	display: flex;
-    justify-content: space-evenly;
-    padding-left: 0px;
+	justify-content:space-evenly;
+	padding-left: 0;
+}
+/*2階層目以降は横並びにしない*/
+nav ul ul{
+	display: block;
 }
 
-.header ul ul {
-    display: block;
+/*下の階層のulや矢印の基点にするためliにrelativeを指定*/
+nav ul li{
+	position: relative;
 }
 
-.header ul li {
-    position: relative;
+/*ナビゲーションのリンク設定*/
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	/* color: #999; */
+	color: black;
+	padding:20px 35px;
+	transition:all .3s;
 }
 
-.header ul li a {
-    display: block;
-  text-decoration: none;
-  color: #999;
-  padding:20px 35px;
-  transition:all .3s;
+nav ul li li a{
+	padding:10px 20px;
 }
 
-.header ul li li a {
-    padding:10px 35px;
+nav ul li a:hover{
+	color:rgb(134, 127, 127);	
 }
 
-.header li .has-child ul {
-    position: absolute;
-    left:0;
-    top:62px;
-    z-index: 4;
-      /*形状を指定*/
-    background:#28BFE7;
-    width:180px;
-      /*はじめは非表示*/
-    visibility: hidden;
-    opacity: 0;
-      /*アニメーション設定*/
-    transition: all .3s;
+/*==矢印の設定*/
+
+/*2階層目を持つliの矢印の設定*/
+nav ul li.has-child::before{
+	content:'';
+	position: absolute;
+	left:15px;
+	top:25px;
+	width:6px;
+	height:6px;
+	border-top: 2px solid black;
+    border-right:2px solid black;
+    transform: rotate(135deg);
+}
+
+
+/*== 2・3階層目の共通設定 */
+
+/*下の階層を持っているulの指定*/
+nav li.has-child ul{
+    /*絶対配置で位置を指定*/
+	position: absolute;
+	left:0;
+	top:62px;
+	z-index: 4;
+    /*形状を指定*/
+	/* background:#28BFE7; */
+	background:#e8f1f5;
+	width:160px;
+    /*はじめは非表示*/
+	visibility: hidden;
+	opacity: 0;
+    /*アニメーション設定*/
+	transition: all .3s;
+}
+
+/*hoverしたら表示*/
+nav li.has-child:hover > ul,
+nav li.has-child ul li:hover > ul,
+nav li.has-child:active > ul,
+nav li.has-child ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*ナビゲーションaタグの形状*/
+nav li.has-child ul li a{
+	/* color: #fff; */
+	color: gray;
+	/* border-bottom:solid 1px rgba(255,255,255,0.6); */
+	border-bottom:solid 1px rgb(163, 161, 161,0.6);
+
+}
+
+nav li.has-child ul li:last-child a{
+	border-bottom:none;
+}
+
+nav li.has-child ul li a:hover,
+nav li.has-child ul li a:active{
+	background:#b9d5f8;
+}
+
+
+
+
+/*==768px以下の形状*/
+
+@media screen and (max-width:768px){
+	nav{
+		padding: 0;
+	}
+	
+	nav ul{
+		display: block;
+	}
+	
+	nav li.has-child ul,
+	nav li.has-child ul ul{
+  	position: relative;
+	left:0;
+	top:0;
+	width:100%;
+	visibility:visible;/*JSで制御するため一旦表示*/
+	opacity:1;/*JSで制御するため一旦表示*/
+	display: none;/*JSのslidetoggleで表示させるため非表示に*/
+	transition:none;/*JSで制御するためCSSのアニメーションを切る*/
+}
+	
+nav ul li a{
+	border-bottom:1px solid #ccc;
+}
+
+/*矢印の位置と向き*/
+
+nav ul li.has-child::before{
+	left:20px;	
+}
+
+nav ul ul li.has-child::before{
+    transform: rotate(135deg);
+	left:20px;
+}
+    
+nav ul li.has-child.active::before{
+    transform: rotate(-45deg);
+}
+
+.ver1,.ver2 {
+	visibility:hidden;
+}
+
+}
+
+
+.ver1 {
+	content:"";
+    position:absolute;
+    width: 1px;
+    height: 80%;
+	background-color: black;
+	color: black;
+    left: 190px;
+	/* left: 120%; */
+	top: 10px;
+	left: 12vw;
+	/* box-sizing: border-box; */
+}
+
+.ver2 {
+	content:"";
+    position:absolute;
+    width: 1px;
+    height: 80%;
+	background-color: black;
+	color: black;
+    left: 190px;
+	/* left: 120%; */
+	top: 10px;
+	left: 13vw;
+	/* box-sizing: border-box; */
+}
+
+
+#menubar.m_fixed {
+	left: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+    z-index: 999;
+    width: 100%;
+    /* background-color: rgba(250, 161, 195, 0.9);         */
+	/* opacity: 0.6; */
+    /* -webkit-transition: all .4s ease 0s, background .6s ease .2s; */
+    /* transition: all .4s ease 0s,background .6s ease .2s; */
+    -webkit-overflow-scrolling: touch;
+    height: 20px;
+
+
 }
