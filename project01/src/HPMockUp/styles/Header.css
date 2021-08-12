@@ -116,12 +116,70 @@ nav li.has-child ul li a:active{
 	background:#b9d5f8;
 }
 
+.mpsize {
+	visibility: hidden;
+}
 
 
-
-/*==768px以下の形状*/
+/* ==768px以下の形状 */
 
 @media screen and (max-width:768px){
+.pcsize {
+	visibility: hidden;
+    position: absolute;
+}
+.mpsize {
+	visibility: visible;
+	display: block;
+}
+.mpsize li.has-child ul,
+.mpsize li.has-child ul ul{
+    position: relative;
+    left:0;
+    top:0;
+    width:100%;
+    visibility:visible; 
+/* JSで制御するため一旦表示 */
+    opacity:1;
+/* JSで制御するため一旦表示 */
+    display: none;
+/*JSのslidetoggleで表示させるため非表示に*/
+    transition:none;
+/*JSで制御するためCSSのアニメーションを切る*/
+}
+.mpsize li a{
+	border-bottom:1px solid #ccc;
+}
+
+ .mpsize li.has-child::before{
+	left:50px;	
+}
+
+.mpsize li.has-child::before{
+    transform: rotate(135deg);
+	left:50px;
+}
+    
+.mpsize li.has-child.active::before{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+.ver1,.ver2 {
+	visibility:hidden;
+}
+
+}
+
+
+
+
+/* @media screen and (max-width:768px){
 	nav{
 		padding: 0;
 	}
@@ -136,19 +194,23 @@ nav li.has-child ul li a:active{
 	left:0;
 	top:0;
 	width:100%;
-	visibility:visible;/*JSで制御するため一旦表示*/
-	opacity:1;/*JSで制御するため一旦表示*/
-	display: none;/*JSのslidetoggleで表示させるため非表示に*/
-	transition:none;/*JSで制御するためCSSのアニメーションを切る*/
-}
+	visibility:visible; */
+	/* JSで制御するため一旦表示 */
+	/* opacity:1; */
+	/* JSで制御するため一旦表示 */
+	/* display: none; */
+	/*JSのslidetoggleで表示させるため非表示に*/
+	/* transition:none; */
+	/*JSで制御するためCSSのアニメーションを切る*/
+/* } */
 	
-nav ul li a{
+/* nav ul li a{
 	border-bottom:1px solid #ccc;
-}
+} */
 
 /*矢印の位置と向き*/
 
-nav ul li.has-child::before{
+/* nav ul li.has-child::before{
 	left:20px;	
 }
 
@@ -165,7 +227,18 @@ nav ul li.has-child.active::before{
 	visibility:hidden;
 }
 
+nav li.has-child:active > ul,
+nav li.has-child ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
 }
+
+
+} */
+
+
+
+
 
 
 .ver1 {
@@ -197,19 +270,3 @@ nav ul li.has-child.active::before{
 }
 
 
-#menubar.m_fixed {
-	left: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-    z-index: 999;
-    width: 100%;
-    /* background-color: rgba(250, 161, 195, 0.9);         */
-	/* opacity: 0.6; */
-    /* -webkit-transition: all .4s ease 0s, background .6s ease .2s; */
-    /* transition: all .4s ease 0s,background .6s ease .2s; */
-    -webkit-overflow-scrolling: touch;
-    height: 20px;
-
-
-}
