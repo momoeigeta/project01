@@ -2,8 +2,8 @@ import React from 'react';
 import ContactHeader from './ContactHeader';
 import ContactButton from './ContactButton';
 // import './styles/Contact.css';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../Footer';
+import Header from '../Header';
 
 const ContactHome = () => {
 

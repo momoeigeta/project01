@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Emp.css';
+import '../styles/Emp.css';
 
 const EmpHeader = () => {
     return (

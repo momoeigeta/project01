@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./styles/Emp.css";
-import NewGrad from './images/NewGrad.png';
-import MidCareer from './images/MidCareer.png';
-import Person from './images/Person.jpg';
+import "../styles/Emp.css";
+import NewGrad from '../images/NewGrad.png';
+import MidCareer from '../images/MidCareer.png';
+import Person from '../images/Person.jpg';
 
 const EmpButton = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import ContactHeader from './ContactHeader';
-import './styles/Contact.css';
+import '../styles/Contact.css';
 import ContactForm from './ContactForm';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../Footer';
+import Header from '../Header';
 
 const Contact = () => {
 

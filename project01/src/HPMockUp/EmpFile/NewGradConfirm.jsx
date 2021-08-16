@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/Contact.css';
+import '../styles/Contact.css';
 import { useLocation } from 'react-router-dom';
-import Header from './Header';
+import Header from '../Header';
 
-const MidCareerConfirm = (props) => {
+const NewGradConfirm = (props) => {
     const { history } = props;
     const location = useLocation();
     const state = location.state;
@@ -15,7 +15,7 @@ const MidCareerConfirm = (props) => {
                 <header className="header" >
                     <div className="backImg">
 
-                        <h1 className="f">中途採用応募フォーム</h1>
+                        <h1 className="f">新卒採用応募フォーム</h1>
                         <h1 className="f">確認画面</h1>
 
                     </div>
@@ -130,4 +130,4 @@ const MidCareerConfirm = (props) => {
     );
 };
 
-export default MidCareerConfirm;
+export default NewGradConfirm;

@@ -2,14 +2,14 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import React from 'react';
 
 import Home from './Home';
-import ContactHome from './ContactHome';
-import Contact from './Contact';
-import ContactConfirm from './ContactConfirm';
-import NewGrad from './NewGrad';
-import NewGradConfirm from './NewGradConfirm';
-import MidCareer from './MidCareer';
-import MidCareerConfirm from './MidCareerConfirm';
-import EmpInfoHome from './EmpInfoHome';
+import ContactHome from './ContactFile/ContactHome';
+import Contact from './ContactFile/Contact';
+import ContactConfirm from './ContactFile/ContactConfirm';
+import NewGrad from './EmpFile/NewGrad';
+import NewGradConfirm from './EmpFile/NewGradConfirm';
+import MidCareer from './EmpFile/MidCareer';
+import MidCareerConfirm from './EmpFile/MidCareerConfirm';
+import EmpInfoHome from './EmpFile/EmpInfoHome';
 
 const App = () => {
 

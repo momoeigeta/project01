@@ -6,6 +6,12 @@
 
 .accordion a {
     color: black;
+    
+}
+
+.accordion a:hover {
+    color: #444;
+
 }
 
 .accordion__item + .accordion__item {
@@ -26,6 +32,7 @@
 
 .accordion__button:hover {
     background-color: #ddd;
+    color:rgb(134, 127, 127);	
 }
 
 .accordion__button:before {

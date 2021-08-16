@@ -1,12 +1,9 @@
 import React from 'react';
-import './styles/Emp.css';
-// import JobDescription from './JobDescription';
-import NewGradForm from './NewGradForm';
-import mynaviBtn from './images/mynaviBtn.png';
-import Header from './Header';
+import Header from '../Header';
+import MidCareerForm from './MidCareerForm';
+import '../styles/Emp.css';
 
-
-const NewGrad = () => {
+const MidCareer = () => {
 
     return (
         <>
@@ -14,18 +11,18 @@ const NewGrad = () => {
             <header className="header" >
                 <div className="backImg">
 
-                    <h1>新卒採用</h1>
+                    <h1>中途採用</h1>
                 </div>
             </header>
             <div className="lineshadow">
                 <p className="shadow">
                     {/* <span className="lineshadow"> */}
-                    新卒採用について
+                    中途採用について
                     {/* </span> */}
                 </p>
                 <hr className="hr1"></hr>
             </div>
-            <p className="caution">現在、2021年度の募集を行っております。</p>
+            <p className="caution">現在、募集を行っております。</p>
             <div className="lineshadow">
                 <p className="shadow">
                     {/* <span className="lineshadow"> */}
@@ -33,10 +30,8 @@ const NewGrad = () => {
                     {/* </span> */}
                 </p>
                 <hr className="hr2"></hr>
-                {/* <JobDescription /> */}
             </div>
-
-            <table >
+            <table border="1">
                 <tr>
                     <th>募集職種</th>
                     <td>エンジニア職</td>
@@ -46,13 +41,6 @@ const NewGrad = () => {
                     <th>募集人数</th>
                     <td>30名（予定）</td>
                     <td>10名（予定）</td>
-                </tr>
-                <tr>
-                    <th>応募資格</th>
-                    <td colspan="2">
-                        <p>2021年3月に4年制大学または大学院を卒業・修了見込みであり、就業経験のないこと</p>
-                        <span>※既卒3年以内の方も応募可能</span>
-                    </td>
                 </tr>
                 <tr>
                     <th>業務内容</th>
@@ -84,8 +72,8 @@ const NewGrad = () => {
                     <th>待遇</th>
                     <td colspan="2">
                         <ul>
-                            <li>初任給：基本給170,000円 + 職務手当30,000円</li>
-                            <li>※上記給与には、みなし残業代（月24時間分・30,000円以上）を含む。超過分は別途支給。</li>
+                            <li>初任給：基本給165,000円 + 職務手当35,000円</li>
+                            <li>※上記給与には、みなし残業代（月28時間分・35,000円以上）を含む。超過分は別途支給。</li>
                             <li>賞与：業績による</li>
                             <li>勤務時間：9:30～18:30（休憩1時間）</li>
                             <li>勤務地：東京本社</li>
@@ -109,17 +97,12 @@ const NewGrad = () => {
             </h3>
             <ul className="left">
                 <li>フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。</li>
-                <li>下記、マイナビからも応募が可能です。</li>
-                <button className="mynaviBtn" >
-                    <img src={mynaviBtn} alt="" />
-                </button>
-
             </ul>
 
-            <h3>会社説明会兼一次選考会</h3>
+            <h3>一次選考会</h3>
             <ul className="left">
                 <li>これからＩＴ業界を目指す方・興味を持ち始めた方も是非ご応募ください！</li>
-                <li>希望者にはそのまま一次選考（筆記試験・面接）も受けていただくことが可能です。</li>
+                <li>筆記試験と面接を受けていただきます。</li>
             </ul>
 
             <h3>最終選考</h3>
@@ -129,14 +112,13 @@ const NewGrad = () => {
 
             <h3>内定</h3>
             <ul className="left">
-                <li>内定までは、2週間前後を予定しています。</li>
+                <li>内定までは、1週間前後を予定しています。</li>
             </ul>
 
             <h3>持ち物</h3>
             <ul className="left">
-                <li>筆記用具、写真付履歴書、卒業見込証明書、成績証明書、健康診断証明書</li>
+                <li>筆記用具、写真付履歴書、職務経歴書</li>
             </ul>
-
             <div className="lineshadow">
                 <p className="shadow">
                     {/* <span className="lineshadow"> */}
@@ -145,9 +127,9 @@ const NewGrad = () => {
                 </p>
                 <hr className="hr4"></hr>
             </div>
-            <NewGradForm />
+            <MidCareerForm />
+
         </>
     );
 };
-
-export default NewGrad;
+export default MidCareer;

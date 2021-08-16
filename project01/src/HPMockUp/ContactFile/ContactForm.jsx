@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
 // import './Form.css';
-import './styles/Contact.css';
+import '../styles/Contact.css';
 import useFormPersist from 'react-hook-form-persist';
 
 const ContactForm = () => {
