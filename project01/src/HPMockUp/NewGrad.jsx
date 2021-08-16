@@ -1,9 +1,10 @@
 import React from 'react';
 import './styles/Emp.css';
-import JobDescription from './JobDescription';
+// import JobDescription from './JobDescription';
 import NewGradForm from './NewGradForm';
 import mynaviBtn from './images/mynaviBtn.png';
 import Header from './Header';
+
 
 const NewGrad = () => {
 
@@ -110,7 +111,7 @@ const NewGrad = () => {
                 <li>フォース株式会社にご興味をお持ち頂きました方は、お電話や応募フォームにて直接お問い合わせ下さい。</li>
                 <li>下記、マイナビからも応募が可能です。</li>
                 <button className="mynaviBtn" >
-                    <img src={mynaviBtn} />
+                    <img src={mynaviBtn} alt="" />
                 </button>
 
             </ul>

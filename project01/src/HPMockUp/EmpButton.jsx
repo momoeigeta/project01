@@ -15,7 +15,7 @@ const EmpButton = () => {
                         // className="EmpNBtn"
                     >
                         <p className="white">新卒採用</p>
-                        <img src={NewGrad} />
+                        <img src={NewGrad} alt="" />
                         <p>新卒採用行っております</p>
                     </button>
                 </Link>
@@ -25,7 +25,7 @@ const EmpButton = () => {
                         // className="EmpMBtn"
                     >
                         <p className="white">中途採用</p>
-                        <img src={MidCareer} />
+                        <img src={MidCareer} alt="" />
                         <p>中途採用行っております</p>
                     </button>
                 </Link>
@@ -44,7 +44,7 @@ const EmpButton = () => {
             <div id="cardlayout-wrap">
                 <section class="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} /></figure>
+                        <figure class="card-figure"><img src={Person} alt="" /></figure>
                         <h2 className="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
@@ -53,7 +53,7 @@ const EmpButton = () => {
 
                 <section class="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} /></figure>
+                        <figure class="card-figure"><img src={Person} alt="" /></figure>
                         <h2 class="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
@@ -62,7 +62,7 @@ const EmpButton = () => {
 
                 <section class="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} /></figure>
+                        <figure class="card-figure"><img src={Person} alt="" /></figure>
                         <h2 class="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
