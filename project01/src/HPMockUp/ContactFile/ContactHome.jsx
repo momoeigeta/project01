@@ -3,7 +3,7 @@ import ContactHeader from './ContactHeader';
 import ContactButton from './ContactButton';
 // import './styles/Contact.css';
 import Footer from '../Footer';
-import Header from '../Header';
+import Header3 from '../Header3';
 
 const ContactHome = () => {
 
@@ -12,7 +12,7 @@ const ContactHome = () => {
             <body className="body">
 
                 <div id="ContactHome">
-                    <Header />
+                    <Header3 />
                     <ContactHeader />
                     <ContactButton />
                 </div>

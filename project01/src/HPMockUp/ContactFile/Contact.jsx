@@ -3,13 +3,13 @@ import ContactHeader from './ContactHeader';
 import '../styles/Contact.css';
 import ContactForm from './ContactForm';
 import Footer from '../Footer';
-import Header from '../Header';
+import Header3 from '../Header3';
 
 const Contact = () => {
 
     return (
         <div>
-            <Header />
+            <Header3 />
             <ContactHeader />
             <div id="contact">
                 <p>弊社に関してのご不明な点はこちらのフォームにて承ります。</p>

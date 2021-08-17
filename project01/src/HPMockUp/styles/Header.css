@@ -5,6 +5,7 @@ nav{
     position:relative;
     z-index:999;
     /* height: 200px; */
+	width: 100%;
 }
 
 nav .topline {
@@ -168,3 +169,21 @@ nav li.has-child ul li a:active{
 }
 
 
+#menubar header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* display: flex; */
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	/* height: 86px; */
+	background-color: #fff;
+	color: #333;
+	transform: translateY(0);
+	transition: transform 0.3s ease;
+    z-index: 999;
+}
+#menubar header.hidden {
+	transform: translateY(-110%);
+  }
