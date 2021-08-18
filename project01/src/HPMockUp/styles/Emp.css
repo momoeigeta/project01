@@ -8,6 +8,11 @@
     /* padding-top: 30px; */
 }
 
+@media screen and (max-width:768px) {
+    .backImg {
+        margin-top: 149px;
+    }
+}
 
 /* EmpButton */
 

@@ -1,6 +1,6 @@
 import React from 'react';
 // import Header from '../Header';
-import Header3 from '../Header3';
+import Header from '../Header';
 import MidCareerForm from './MidCareerForm';
 import '../styles/Emp.css';
 
@@ -8,7 +8,7 @@ const MidCareer = () => {
 
     return (
         <>
-            <Header3 />
+            <Header />
             <header className="header" >
                 <div className="backImg">
 

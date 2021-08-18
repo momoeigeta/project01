@@ -17,6 +17,13 @@ body {
 
 }
 
+@media screen and (max-width:768px) {
+    .back {
+        margin-top: 149px;
+    }
+}
+
+
 header {
     text-align: center;
 	position:relative;

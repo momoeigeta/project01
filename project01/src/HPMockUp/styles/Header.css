@@ -187,3 +187,37 @@ nav li.has-child ul li a:active{
 #menubar header.hidden {
 	transform: translateY(-110%);
   }
+
+#menubar header.shade {
+	box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  }
+
+  .isClose {
+	display: none;
+  }
+  
+  .isOpen {
+	display: block;
+  }
+
+  button.accordion__button {
+	  height: 60px;
+	  font-size: 16px;
+	  background-color: #a2cbec;
+  }
+  button.accordion__button:hover {
+	  background-color: #96c7f0;
+  }
+
+ /* button.accordion__button[onClick='true']::before,
+ button.accordion__button[Open="IsOpen"]::before {
+    transform: rotate(45deg);
+} */
+
+button.accordion__button::before {
+	display: none;
+}
+
+
+
+
