@@ -4,15 +4,24 @@
     height: 200px;
     background-image: url(../images/EmpTop.jpg);
 
-    margin-top: 120px;
+    /* margin-top: 120px; */
+    margin-top: 89px;
+
     /* padding-top: 30px; */
 }
 
 @media screen and (max-width:768px) {
     .backImg {
         margin-top: 149px;
+        /* max-width: 100%; */
+    }
+    .shape1::after {
+        /* width: 100px; */
     }
 }
+
+
+
 
 /* EmpButton */
 
@@ -158,7 +167,8 @@
 
 .shape1::after {
     content:  '';                   /* 空白の要素を作る */
-    width: 750px;                       /* 幅指定 */
+    width: 850px;                       /* 幅指定 */
+    width: 60%;                      
     height: 50px;                      /* 高さ指定 */
     border-style: solid;   
     background-color: #daedf5;

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Force from './images/Force.png';
 import './styles/Accordion.css';
 import './styles/Header.css';
-// import './styles/MenuBtn.css';
 
 import {
     Accordion,
@@ -16,7 +15,7 @@ import {
 import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 
 
-const Header3 = () => {
+const Header = () => {
 
     const [shouldHideHeader, setShouldHideHeader] = useState(false);
     const [shouldShowshade, setShouldShowshade] = useState(false);
@@ -160,4 +159,4 @@ const Header3 = () => {
     )
 };
 
-export default Header3;
+export default Header;

@@ -6,6 +6,7 @@ nav{
     z-index:999;
     /* height: 200px; */
 	width: 100%;
+	/* max-width: 100%; */
 }
 
 nav .topline {
@@ -17,6 +18,7 @@ nav img {
 	width: 120px;
     height: 60px;
     margin: 0 100px 0 100px;
+
 }
 
 /*ナビゲーションを横並びに*/
@@ -24,7 +26,8 @@ nav ul{
 	list-style: none;
 	display: flex;
 	justify-content:space-evenly;
-	padding-left: 0;
+	padding-left: 30px;
+    margin: 0px;
 }
 /*2階層目以降は横並びにしない*/
 nav ul ul{
@@ -89,6 +92,7 @@ nav li.has-child ul{
 	opacity: 0;
     /*アニメーション設定*/
 	transition: all .3s;
+	padding-left: 0px;
 }
 
 /*hoverしたら表示*/
@@ -136,6 +140,7 @@ nav li.has-child ul li a:active{
 .mpsize {
 	visibility: visible;
 	display: block;
+	max-width: 100%;
 }
 }
 
@@ -144,12 +149,15 @@ nav li.has-child ul li a:active{
 	content:"";
     position:absolute;
     width: 1px;
-    height: 80%;
+    /* height: 80%; */
+    height: 60%;
+
 	background-color: black;
 	color: black;
     left: 190px;
 	/* left: 120%; */
-	top: 10px;
+	/* top: 10px; */
+	top: 14px;
 	left: 12vw;
 	/* box-sizing: border-box; */
 }
@@ -158,12 +166,14 @@ nav li.has-child ul li a:active{
 	content:"";
     position:absolute;
     width: 1px;
-    height: 80%;
+    /* height: 80%; */
+    height: 60%;
 	background-color: black;
 	color: black;
     left: 190px;
 	/* left: 120%; */
-	top: 10px;
+	/* top: 10px; */
+	top: 14px;
 	left: 13vw;
 	/* box-sizing: border-box; */
 }

@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	/* max-width: 100%; */
 }
 
 
@@ -11,9 +12,10 @@ body {
 .back {
     background-size:  cover;   
     height: 200px;
-    background-image: url(../images/Top.jpg);
+    background-image: url(../images/ContactTop.jpg);
 
-	margin-top: 120px;
+	/* margin-top: 120px; */
+	margin-top: 89px;
 
 }
 
@@ -106,6 +108,12 @@ a:active {
 	max-width: 720px;
   }
 
+@media screen and (max-width: 480px) {
+	.Form {
+		margin-top: 40px;
+	}
+}
+
  .Form-Item {
 	/* border-top: 1px solid #ddd; */
 	padding-top: 24px;
@@ -115,6 +123,16 @@ a:active {
 	align-items: center;
   }
 
+@media screen and (max-width: 480px) {
+	.Form-Item {
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		flex-wrap: wrap;
+	}
+}
+
   .Form-Item-Label {
 	width: 100%;
 	/* max-width: 248px; */
@@ -123,9 +141,22 @@ a:active {
 	font-size: 16px;
     text-align: left;
   }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label {
+	  max-width: inherit;
+	  display: flex;
+	  align-items: center;
+	  font-size: 15px;
+	}
+  }
 
   .Form-Item-Label.isMsg {
 	margin-top: 8px;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label.isMsg {
+	  margin-top: 0;
+	}
   }
 
  .Form-Item-Input {
@@ -141,6 +172,15 @@ a:active {
 	background: #eaedf2;
 	font-size: 18px;
     display: block;
+  }
+  @media screen and (max-width: 480px) {
+	.Form-Item-Input {
+	  margin-left: 0;
+	  margin-top: 18px;
+	  height: 40px;
+	  flex: inherit;
+	  font-size: 15px;
+	}
   }
 
   .Form-Item-Textarea {
@@ -158,6 +198,15 @@ a:active {
 	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
     display: block;
 }
+@media screen and (max-width: 480px) {
+	.Form-Item-Textarea {
+	  margin-top: 18px;
+	  margin-left: 0;
+	  height: 200px;
+	  flex: inherit;
+	  font-size: 15px;
+	}
+  }
 
   .Form-Btn {
 	border-radius: 10px;
@@ -178,6 +227,15 @@ a:active {
 	border: none;  /* 枠線を消す */
 	cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+	.Form-Btn {
+	  margin-top: 24px;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  width: 160px;
+	  font-size: 16px;
+	}
+  }
 
 .Form-Btn a {
 	text-decoration: none;
@@ -191,8 +249,18 @@ a:active {
 .value {
 	text-align: left;
     margin-left: 60px;
-	/* max-width: 600px; */
+	max-width: 600px;
 	overflow-wrap : break-word;
+
+	border: 1px solid #ddd;
+	background: #eaedf2;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 6px;
+	align-items: center;
+    padding-top: 5px;
+	padding-bottom: 2px;
+	/* font-size: 18px; */
 }
 
 .f {

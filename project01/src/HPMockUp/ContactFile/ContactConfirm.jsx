@@ -33,85 +33,88 @@ const ContactConfirm = (props) => {
                         {state.values.name}
                     </p>
                     {/* </div> */}
+                {/* </div> */}
+                {/* <div class="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    会社名・法人名・団体名
+                    <span className="caution">*</span>
+                    <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
+                </p>
+                <p className="value">
+                    {state.values.company}
+                </p>
+                {/* </div> */}
+                {/* <div class="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    部署・役職等
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.department}
+                </p>
+                {/* </div> */}
 
-                    {/* <div class="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        会社名・法人名・団体名
-                        <span className="caution">*</span>
-                        <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
-                    </p>
-                    <p className="value">
-                        {state.values.company}
-                    </p>
-                    {/* </div> */}
-                    {/* <div class="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        部署・役職等
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.department}
-                    </p>
-                    {/* </div> */}
+                {/* <div className="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    メールアドレス
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.email}
+                </p>
+                {/* </div> */}
 
-                    {/* <div className="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        メールアドレス
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.email}
-                    </p>
-                    {/* </div> */}
+                {/* <div class="Form-Item"> */}
+                <p class="Form-Item-Label">
+                    電話番号
+                    <span class="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.tel}
+                </p>
+                {/* </div> */}
 
-                    {/* <div class="Form-Item"> */}
-                    <p class="Form-Item-Label">
-                        電話番号
-                        <span class="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.tel}
-                    </p>
-                    {/* </div> */}
+                {/* <div className="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    郵便番号
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.postalCode}
+                </p>
+                {/* </div> */}
+                {/* <div className="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    都道府県
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.prefectures}
+                </p>
+                {/* </div> */}
+                {/* <div className="Form-Item"> */}
+                <p className="Form-Item-Label">
+                    ご住所
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.address}
+                </p>
+                {/* </div> */}
 
-                    {/* <div className="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        郵便番号
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.postalCode}
-                    </p>
-                    {/* </div> */}
-                    {/* <div className="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        都道府県
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.prefectures}
-                    </p>
-                    {/* </div> */}
-                    {/* <div className="Form-Item"> */}
-                    <p className="Form-Item-Label">
-                        ご住所
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.address}
-                    </p>
-                    {/* </div> */}
-
-                    {/* <div class="Form-Item"> */}
-                    <p className="Form-Item-Label isMsg">
-                        メッセージ本文
-                        <span className="caution">*</span>
-                    </p>
-                    <p className="value">
-                        {state.values.message}
-                    </p>
-                    {/* </div> */}
+                {/* <div class="Form-Item"> */}
+                <p className="Form-Item-Label isMsg">
+                    メッセージ本文
+                    <span className="caution">*</span>
+                </p>
+                <p className="value">
+                    {state.values.message}
+                </p>
+                {/* </div> */}
                 </div>
+
+
+
 
                 <div className='btnBox'>
                     <input
