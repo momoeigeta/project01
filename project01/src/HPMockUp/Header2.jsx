@@ -15,7 +15,7 @@ import {
 import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 
 
-const Header = () => {
+const Header2 = () => {
 
     const [shouldHideHeader, setShouldHideHeader] = useState(false);
     const [shouldShowshade, setShouldShowshade] = useState(false);
@@ -45,9 +45,9 @@ const Header = () => {
     return (
         <>
             <div id="menubar">
-                <header className={`header  ${hiddenStyle} ${shadeStyle}`}>
 
-                    <nav>
+                <nav>
+                    <header className={`header  ${hiddenStyle} ${shadeStyle}`}>
                         <div className="topline" />
 
                         <ul className="pcsize">
@@ -80,10 +80,13 @@ const Header = () => {
                                 <Link to="/ContactHome">お問い合わせ</Link>
                             </li>
                         </ul>
+                    </header>
 
+                    <div className="mpsize">
+                        <div className="topline" />
 
-                        <div className="mpsize">
-                            <Link to="/"><img src={Force} alt=""></img></Link>
+                        <Link to="/"><img src={Force} alt=""></img></Link>
+                        <div className={`header  ${hiddenStyle} ${shadeStyle}`}>
                             <button onClick={toggle}
                                 className="accordion__button"
                             >{open ? '閉じる' : 'メニュー'}</button>
@@ -146,13 +149,14 @@ const Header = () => {
                                 </Accordion>
                             </div>
 
-
                         </div>
 
+                    </div>
 
-                    </nav>
 
-                </header>
+                </nav>
+
+                {/* </header> */}
 
             </div>
 
@@ -161,4 +165,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default Header2;

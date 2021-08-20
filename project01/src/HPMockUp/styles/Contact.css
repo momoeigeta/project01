@@ -22,6 +22,7 @@ body {
 @media screen and (max-width:768px) {
     .back {
         margin-top: 149px;
+		height: 100px;
     }
 }
 
@@ -48,6 +49,12 @@ h1 {
 	margin: 0px;
 	line-height: 200px;
 }
+@media screen and (max-width:768px) {
+	h1 {
+		line-height: 100px;
+        font-size: 30px;
+	}
+}
 
 p {
 	margin-left: 30px;
@@ -58,13 +65,24 @@ p {
     color: red;
     text-shadow: 2px 2px 2px silver;
 }
+@media screen and (max-width: 768px) {
+	.red {
+		font-size: 30px;
+	}
+}
 
 .c {
     font-size: 24px;
     font-weight: normal;
-
 	margin-top: 0px;
 }
+@media screen and (max-width: 768px) {
+	.c {
+    margin: 0px 5% 0px 5%;
+	font-size: 20px;
+	}
+}
+
 
 .d {
 margin: 10px 20px 10px 20px;
@@ -72,6 +90,20 @@ text-shadow: 2px 3px 2px white;
 line-height: 1;
 font-weight: bold;
 color: black;
+}
+.big {
+	font-size: 25px;
+}
+.small {
+	font-size: 15px;
+}
+@media screen and (max-width: 480px) {
+	.big {
+		font-size: 20px;
+	}
+	.small {
+		font-size: 15px;
+	}
 }
 
 #contact {
@@ -84,6 +116,11 @@ color: black;
 .caution {
     color: red;
 }
+@media screen and (max-width: 480px) {
+	.caution {
+		margin-left: 0px;
+	}
+}
 
 .line {
 	border-bottom: solid 1px black;
@@ -91,6 +128,7 @@ color: black;
 
 .mgr10 {
 	margin-left: 15px;
+	margin-right: 10px;
 }
 
 a {
@@ -110,7 +148,8 @@ a:active {
 
 @media screen and (max-width: 480px) {
 	.Form {
-		margin-top: 40px;
+	
+		/* margin-top: 40px; */
 	}
 }
 
@@ -125,10 +164,10 @@ a:active {
 
 @media screen and (max-width: 480px) {
 	.Form-Item {
-		padding-left: 14px;
-		padding-right: 14px;
+		/* padding-left: 14px; */
+		/* padding-right: 14px; */
 		padding-top: 16px;
-		padding-bottom: 16px;
+		/* padding-bottom: 16px; */
 		flex-wrap: wrap;
 	}
 }
@@ -155,7 +194,7 @@ a:active {
   }
   @media screen and (max-width: 480px) {
 	.Form-Item-Label.isMsg {
-	  margin-top: 0;
+	  /* margin-top: 0; */
 	}
   }
 
@@ -175,12 +214,13 @@ a:active {
   }
   @media screen and (max-width: 480px) {
 	.Form-Item-Input {
-	  margin-left: 0;
+	  margin-left: 0px;
 	  margin-top: 18px;
 	  height: 40px;
 	  flex: inherit;
 	  font-size: 15px;
-	}
+	  width: 230px;
+      }
   }
 
   .Form-Item-Textarea {
@@ -201,10 +241,12 @@ a:active {
 @media screen and (max-width: 480px) {
 	.Form-Item-Textarea {
 	  margin-top: 18px;
-	  margin-left: 0;
+	  margin-left: 0px;
 	  height: 200px;
 	  flex: inherit;
 	  font-size: 15px;
+	  width: 230px;
+
 	}
   }
 
@@ -229,10 +271,10 @@ a:active {
 }
 @media screen and (max-width: 480px) {
 	.Form-Btn {
-	  margin-top: 24px;
-	  padding-top: 8px;
-	  padding-bottom: 8px;
-	  width: 160px;
+	  /* margin-top: 24px; */
+	  /* padding-top: 8px; */
+	  /* padding-bottom: 8px; */
+	  /* width: 160px; */
 	  font-size: 16px;
 	}
   }
@@ -262,9 +304,26 @@ a:active {
 	padding-bottom: 2px;
 	/* font-size: 18px; */
 }
+@media screen and (max-width: 480px) {
+	.value {
+	  margin-left: 30px;
+	  /* margin-top: 15px; */
+	  margin-top: 0px;
+	  flex: inherit;
+	  font-size: 15px;
+	  width: 230px;
+      }
+  }
+
+
 
 .f {
 	line-height: 100px;
+}
+@media screen and (max-width: 768px) {
+	.f {
+		line-height: 50px;
+	}
 }
 
 .error{
@@ -272,7 +331,24 @@ a:active {
     font-size: 12px;
     padding: 4px;
   }
+  @media screen and (max-width: 480px) {
+	  .error {
+		margin-left: 0px;  
+	  }
+}
 
 .btnBox {
 	height: 100px;
+}
+@media screen and (max-width: 480px) {
+	.btnBox {
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+.company {
+	margin: 0px;
+	margin-left: 10px;
+}
 }

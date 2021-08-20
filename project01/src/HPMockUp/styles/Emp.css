@@ -13,6 +13,7 @@
 @media screen and (max-width:768px) {
     .backImg {
         margin-top: 149px;
+        height: 100px;
         /* max-width: 100%; */
     }
     .shape1::after {
@@ -143,7 +144,14 @@
     position: relative;
     padding-top: 50px;
     padding-left: 40px;
+    /* padding-right: 20px; */
 }
+@media screen and (max-width:480px) {
+    .char p {
+    padding-right: 20px;
+    }
+}
+
 
 .char hr {
     text-align: right;
@@ -180,6 +188,13 @@
     /* left: 395px;     */
     
     
+}
+
+@media screen and (max-width: 559px) {
+  .shape1::after {
+      top: -75px;
+     /* height: 70px; */
+    }
 }
 
 .inta {
@@ -335,6 +350,12 @@
     text-align: left;
     text-shadow: 1px 2px 2px rgb(73, 60, 60);
 }
+@media all and (max-width: 768px) {
+    .shadow {
+        font-size: 20px;
+    }
+}
+
 
 .lineshadow hr {
     position: absolute;
@@ -375,6 +396,14 @@ table {
     margin-right: auto;
     border-collapse: collapse;
 }
+@media all and (max-width: 480px) {
+ table {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+
+}
+}
 
 table th {
 padding: 10px;
@@ -385,31 +414,56 @@ background-color: rgb(183, 231, 252);
 table th, table td {
     border: solid 1px black;
 }
+table ul {
+    padding-left: 5%;
+}
 
 table li {
     text-align: left;
     list-style: none;
+    margin-bottom: 5px;
 }
 
 table p {
     text-align: left;
-    margin-bottom: 0px;
 }
+@media all and (max-width: 480px) {
+    table p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 
 h3 {
     text-align: left;
     color: red;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    margin-left: 18%;
     text-shadow: 1px 1px 2px rgb(136, 125, 125);
     margin-bottom: 5px;
 }
+/* @media screen and (max-width: 480px) {
+    h3 {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+} */
+
 
 .left {
     text-align: left;
     list-style: none;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    margin-left: 18%;
     margin-top: 0px;
+    margin-right: 5%;
 }
+/* @media screen and (max-width: 480px) {
+    .left {
+margin-left: 10px;
+    }
+} */
 
 .mynaviBtn {
     padding: 0;

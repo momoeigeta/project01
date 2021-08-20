@@ -6,9 +6,9 @@ const ContactButton = () => {
         <div>
             <button id="ContactBtn">
                 <Link to="/Contact">
-                    <p className="d" style={{ fontSize: "28px" }}>
+                    <p className="d big">
                         お問い合わせはこちらから</p>
-                    <p className="d" style={{ fontSize: "18px" }}>
+                    <p className="d small">
                         お気軽にご相談・お問い合わせ下さい。</p>
                 </Link>
             </button>
