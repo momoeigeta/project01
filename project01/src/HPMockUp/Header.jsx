@@ -43,7 +43,7 @@ const Header = () => {
     const toggle = () => setOpen(!open);
 
     return (
-        <>
+        // <>
             <div id="menubar">
                 <header className={`header  ${hiddenStyle} ${shadeStyle}`}>
 
@@ -156,7 +156,7 @@ const Header = () => {
 
             </div>
 
-        </>
+        // {/* </> */}
 
     )
 };

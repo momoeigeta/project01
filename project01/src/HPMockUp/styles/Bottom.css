@@ -1,0 +1,24 @@
+.bottom {
+    background-color: rgb(94, 94, 126);
+    /* margin-top: 60px; */
+    height: 200px;
+}
+@media screen and (max-width:768px) {
+    .bottom {
+    margin-top: 60px; 
+    }
+}
+
+.wrap {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    /* border:2px #ccc solid; */
+    height:200px;
+    /* margin:0 0 1em; */
+  }
+
+  .around {
+    -ms-flex-pack:distribute;
+    justify-content:space-around;
+  }
