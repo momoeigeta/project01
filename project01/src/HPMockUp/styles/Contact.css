@@ -3,7 +3,6 @@ html {
 	/* max-width: 100%; */
 }
 
-
 body {
     text-align: center;
 }
@@ -16,16 +15,15 @@ body {
 
 	/* margin-top: 120px; */
 	margin-top: 89px;
-
 }
 
 @media screen and (max-width:768px) {
     .back {
         margin-top: 149px;
 		height: 100px;
+		/* padding-top: 50px; */
     }
 }
-
 
 header {
     text-align: center;
@@ -83,7 +81,6 @@ p {
 	}
 }
 
-
 .d {
 margin: 10px 20px 10px 20px;
 text-shadow: 2px 3px 2px white;
@@ -111,7 +108,22 @@ color: black;
     font-weight: normal;
     font-size: 16px;
 	margin-left: 150px;
+	margin-right: 150px;
 }
+@media screen and (max-width: 768px) {
+ #contact {
+	 margin-left: 0px;
+	 margin-right: 20px;
+ }
+}
+@media screen and (max-width: 480px) {
+	#contact {
+     font-size: 15px;
+	}
+	#contact .caution {
+		margin-left: 30px;
+	}
+   }
 
 .caution {
     color: red;
@@ -124,11 +136,6 @@ color: black;
 
 .line {
 	border-bottom: solid 1px black;
-}
-
-.mgr10 {
-	margin-left: 15px;
-	margin-right: 10px;
 }
 
 a {
@@ -146,12 +153,6 @@ a:active {
 	max-width: 720px;
   }
 
-@media screen and (max-width: 480px) {
-	.Form {
-	
-		/* margin-top: 40px; */
-	}
-}
 
  .Form-Item {
 	/* border-top: 1px solid #ddd; */
@@ -174,7 +175,6 @@ a:active {
 
   .Form-Item-Label {
 	width: 100%;
-	/* max-width: 248px; */
 	letter-spacing: 0.05em;
 	/* font-weight: bold; */
 	font-size: 16px;
@@ -189,12 +189,14 @@ a:active {
 	}
   }
 
-  .Form-Item-Label.isMsg {
-	margin-top: 8px;
+  .Form-Item-Label p {
+	  width: 100%;
   }
   @media screen and (max-width: 480px) {
-	.Form-Item-Label.isMsg {
-	  /* margin-top: 0; */
+	.Form-Item-Label p {
+		/* max-width: 400px; */
+		margin-right: 30px;
+		margin-bottom: 10px;
 	}
   }
 
@@ -204,22 +206,31 @@ a:active {
 	margin-left: 40px;
 	padding-left: 1em;
 	padding-right: 1em;
-	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	flex: 1;
 	width: 100%;
 	max-width: 600px;
 	background: #eaedf2;
 	font-size: 18px;
     display: block;
+	overflow-wrap : break-word;
+	margin-top: 10px;
+/* margin-right: 15px; */
+/* box-sizing:border-box; */
+
   }
   @media screen and (max-width: 480px) {
 	.Form-Item-Input {
 	  margin-left: 0px;
-	  margin-top: 18px;
-	  height: 40px;
-	  flex: inherit;
+	  /* margin-top: 18px; */
+	  /* flex: inherit; */
 	  font-size: 15px;
-	  width: 230px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  margin-right: 10px;
+	  display: block;
+	  box-sizing:border-box;
       }
   }
 
@@ -235,18 +246,18 @@ a:active {
 	max-width: 600px;
 	background: #eaedf2;
 	font-size: 18px;
-	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
     display: block;
+	margin-top: 10px;
 }
 @media screen and (max-width: 480px) {
 	.Form-Item-Textarea {
-	  margin-top: 18px;
+	  /* margin-top: 18px; */
 	  margin-left: 0px;
 	  height: 200px;
 	  flex: inherit;
 	  font-size: 15px;
-	  width: 230px;
-
+	  box-sizing:border-box;
+	  /* margin-right: 30px; */
 	}
   }
 
@@ -271,7 +282,7 @@ a:active {
 }
 @media screen and (max-width: 480px) {
 	.Form-Btn {
-	  /* margin-top: 24px; */
+	  margin-top: 20px;
 	  /* padding-top: 8px; */
 	  /* padding-bottom: 8px; */
 	  /* width: 160px; */
@@ -301,7 +312,9 @@ a:active {
 	border-radius: 6px;
 	align-items: center;
     padding-top: 5px;
+	/* padding-bottom: 5px; */
 	padding-bottom: 2px;
+
 	/* font-size: 18px; */
 }
 @media screen and (max-width: 480px) {
@@ -311,7 +324,7 @@ a:active {
 	  margin-top: 0px;
 	  flex: inherit;
 	  font-size: 15px;
-	  width: 230px;
+	  margin-right: 30px;
       }
   }
 
@@ -349,6 +362,5 @@ a:active {
 @media screen and (max-width: 480px) {
 .company {
 	margin: 0px;
-	margin-left: 10px;
 }
 }

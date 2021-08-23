@@ -43,7 +43,7 @@ const ContactForm = () => {
                         <div className="Form-Item-Label">
                             <p htmlFor="company">会社名・法人名・団体名
                                 <span className="caution">*</span>
-                                <span className="mgr10">※個人のお客様は「個人」とご記入ください</span>
+                                <p className="company">※個人のお客様は「個人」とご記入ください</p>
                                 <input type="text" id="company" name="company"
                                     className="Form-Item-Input"
                                     {...register("company", { required: true })}
