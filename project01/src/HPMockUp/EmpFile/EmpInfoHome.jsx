@@ -3,6 +3,7 @@ import EmpButton from "./EmpButton";
 import EmpHeader from "./EmpHeader";
 import Header from "../Header";
 import '../styles/Emp.css';
+import Bottom from "../Bottom";
 
 
 const EmpInfoHome = () => {
@@ -13,6 +14,7 @@ const EmpInfoHome = () => {
                 <Header />
                 <EmpHeader />
                 <EmpButton />
+                <Bottom />
             </body>
         </div>
     )
