@@ -4,6 +4,7 @@ import ContactButton from './ContactButton';
 // import './styles/Contact.css';
 import Footer from '../Footer';
 import Header from '../Header';
+import Bottom from '../Bottom';
 
 const ContactHome = () => {
 
@@ -19,6 +20,8 @@ const ContactHome = () => {
 
                 <Footer />
             </body>
+            <Bottom />
+
         </div >
     );
 };

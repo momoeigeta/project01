@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import MidCareerForm from './MidCareerForm';
 import '../styles/Emp.css';
+import Bottom from '../Bottom';
 
 const MidCareer = () => {
 
@@ -128,7 +129,7 @@ const MidCareer = () => {
                 <hr className="hr4"></hr>
             </div>
             <MidCareerForm />
-
+            <Bottom />
         </>
     );
 };

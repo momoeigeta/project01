@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Contact.css';
 import { useLocation } from 'react-router-dom';
 import Header from '../Header';
+import Bottom from '../Bottom';
 
 const ContactConfirm = (props) => {
     const { history } = props;
@@ -156,6 +157,7 @@ const ContactConfirm = (props) => {
                     />
                 </div>
             </div>
+            <Bottom />
         </>
     );
 };

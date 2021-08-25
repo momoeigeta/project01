@@ -22,7 +22,6 @@ nav img {
 	width: 120px;
     height: 60px;
     margin: 0 100px 0 100px;
-
 }
 
 /*ナビゲーションを横並びに*/
@@ -198,6 +197,7 @@ nav li.has-child ul li a:active{
 	transition: transform 0.3s ease;
     z-index: 999;
 }
+
 #menubar header.hidden {
 	transform: translateY(-110%);
   }
@@ -215,8 +215,8 @@ nav li.has-child ul li a:active{
   }
 
   button.accordion__button {
-	  height: 60px;
-	  /* height: 44px; */
+	  /* height: 60px; */
+	  height: 48px;
 
 	  font-size: 16px;
 	  background-color: #a2cbec;

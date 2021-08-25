@@ -4,6 +4,7 @@ import '../styles/Contact.css';
 import ContactForm from './ContactForm';
 import Footer from '../Footer';
 import Header from '../Header';
+import Bottom from '../Bottom';
 
 const Contact = () => {
 
@@ -21,6 +22,7 @@ const Contact = () => {
             </div>
             <ContactForm />
             <Footer />
+            <Bottom />
         </div>
     );
 

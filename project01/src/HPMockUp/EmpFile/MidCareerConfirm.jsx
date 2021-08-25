@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import Bottom from '../Bottom';
 import Header from '../Header';
 import '../styles/Contact.css';
 
@@ -145,6 +146,7 @@ const MidCareerConfirm = (props) => {
                     />
                 </div>
             </div>
+            <Bottom />
         </>
     );
 };

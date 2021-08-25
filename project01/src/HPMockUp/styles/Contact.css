@@ -20,7 +20,7 @@ body {
 @media screen and (max-width:768px) {
     .back {
         /* margin-top: 149px; */
-        margin-top: 60px;
+        margin-top: 48px;
 		height: 100px;
 		/* padding-top: 50px; */
     }
@@ -354,7 +354,7 @@ a:active {
 .btnBox {
 	height: 100px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 	.btnBox {
 		height: 150px;
 	}
