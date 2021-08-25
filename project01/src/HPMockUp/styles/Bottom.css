@@ -3,11 +3,11 @@
     background-color: #548199;
 }
 @media screen and (max-width:768px) {
-    .bottom {
-    margin-top: 48px; 
+    /* .bottom { */
+    /* margin-top: 48px;  */
     /* display: block;
     max-width: 100%; */
-    }
+    /* } */
 }
 
 .wrap {

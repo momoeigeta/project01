@@ -1,0 +1,68 @@
+.Top {
+    height: 450px;
+}
+@media screen and (max-width:768px) {
+    .Top {
+        margin-top: 48px;
+        height: 250px;
+    }
+}
+.Top .topImage {
+/* height: 500px; */
+height: 450px;
+width: 100%;
+vertical-align: bottom;
+position: relative;
+}
+@media screen and (max-width:768px) {
+    .Top .topImage {
+        height: 250px;
+    }
+}
+.Top h1 {
+    text-align: left;
+    position: absolute;
+}
+.Top .hh1 {
+    top: 150px;
+    left: 8%;
+}
+.Top .hh2 {
+    top: 250px;
+    left: 8%;
+}
+@media screen and (max-width:430px) {
+    .Top .hh2 {
+    top: 220px;
+    }
+}
+
+.Top .red {
+    font-size: 40px;
+}
+@media screen and (max-width:768px) {
+    .Top .red {
+        font-size: 30px;
+    }
+}
+.Top button {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(37, 160, 201);
+    color: rgb(37, 160, 201);
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .Top button {
+        top: 320px;
+        padding: 8px;
+        width: 180px;
+        font-size: 13px;
+    }
+}
