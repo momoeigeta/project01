@@ -1,7 +1,5 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Bottom from '../Bottom';
-import Header from '../Header';
 import '../styles/Contact.css';
 
 const MidCareerConfirm = (props) => {
@@ -12,7 +10,6 @@ const MidCareerConfirm = (props) => {
     return (
         <>
             <div>
-                <Header />
                 <header className="header" >
                     <div className="backImg">
 
@@ -146,7 +143,6 @@ const MidCareerConfirm = (props) => {
                     />
                 </div>
             </div>
-            <Bottom />
         </>
     );
 };

@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css';
 import { useLocation } from 'react-router-dom';
-import Header from '../Header';
-import Bottom from '../Bottom';
 
 const NewGradConfirm = (props) => {
     const { history } = props;
@@ -12,7 +10,6 @@ const NewGradConfirm = (props) => {
     return (
         <>
             <div>
-                <Header />
                 <header className="header" >
                     <div className="backImg">
 
@@ -145,7 +142,6 @@ const NewGradConfirm = (props) => {
                     />
                 </div>
             </div>
-            <Bottom />
         </>
     );
 };

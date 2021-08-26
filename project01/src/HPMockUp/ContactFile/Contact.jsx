@@ -3,14 +3,11 @@ import ContactHeader from './ContactHeader';
 import '../styles/Contact.css';
 import ContactForm from './ContactForm';
 import Footer from '../Footer';
-import Header from '../Header';
-import Bottom from '../Bottom';
 
 const Contact = () => {
 
     return (
         <div>
-            <Header />
             <ContactHeader />
             <div id="contact">
                 <p>弊社に関してのご不明な点はこちらのフォームにて承ります。</p>
@@ -22,7 +19,6 @@ const Contact = () => {
             </div>
             <ContactForm />
             <Footer />
-            <Bottom />
         </div>
     );
 

@@ -1,0 +1,101 @@
+.Corp .backImg {
+    background-image: url(../images/CorpTop.jpg);
+}
+
+.Corp .CorpBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.CorpBtn button {
+    border-radius: 50%;
+    margin: 50px 50px 50px 50px;
+    background-color: rgb(248, 59, 59); 
+    border: solid rgb(248, 2, 2);
+	cursor: pointer;
+	width:200px;
+    height:200px;
+    padding: 0;
+}
+.Corp .white {
+    color: white;
+    margin: 5px;
+    height: 50px;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px rgb(73 60 60);
+    font-weight: bold;
+}
+
+.CorpBtn img {
+    width: 60px;
+    height: 60px;
+}
+
+.Corp .char p {
+    text-align: left;
+    max-width: 100%;
+    padding-left: 32%;
+}
+@media screen and (max-width:1024px) {
+    .Corp .char p {
+        padding-left: 29%;
+    }
+}
+@media screen and (max-width:768px) {
+    .Corp .char p {
+        padding-right: 20px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:430px) {
+    .Corp .char p {
+        font-size: 16px;
+        padding-left: 16%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Corp .char hr {
+        width: 78%;
+    }
+}
+@media screen and (max-width:430px) {
+    .Corp .char hr {
+        width: 90%;
+    }
+}
+
+.Corp .shape1::after {
+    height: 80px;
+    top: -75px;
+}
+@media screen and (max-width:1024px) {
+    .Corp .shape1::after {
+        width: 69%;
+        top: -105px;
+        height: 115px;
+    }
+}
+@media screen and (max-width:768px) {
+    .Corp .shape1::after {
+        width: 68%;
+        height: 110px;
+        top: -97px;
+        left: 29%;
+    }
+}
+@media screen and (max-width:430px) {
+    .Corp .shape1::after {
+        top: -111px;
+        height: 120px;
+        width: 78%;
+        left: 16%;
+    }
+}
+@media screen and (max-width:366px) {
+    .Corp .shape1::after {
+        top: -134px;
+        height: 140px;
+    }
+}

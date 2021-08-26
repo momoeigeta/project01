@@ -3,15 +3,12 @@ import '../styles/Emp.css';
 // import JobDescription from './JobDescription';
 import NewGradForm from './NewGradForm';
 import mynaviBtn from '../images/mynaviBtn.png';
-import Header from '../Header';
-import Bottom from '../Bottom';
 
 
 const NewGrad = () => {
 
     return (
         <>
-            <Header />
             <header className="header" >
                 <div className="backImg">
 
@@ -147,7 +144,6 @@ const NewGrad = () => {
                 <hr className="hr4"></hr>
             </div>
             <NewGradForm />
-            <Bottom />
         </>
     );
 };

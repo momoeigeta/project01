@@ -1,16 +1,17 @@
 import React from 'react';
-import '../styles/Emp.css';
+import '../styles/Corp.css';
 
-const EmpHeader = () => {
+const CorpHeader = () => {
+
     return (
-        <div>
+        <div className="Corp">
             <header className="header" >
                 <div className="backImg">
-                    <h1>採用情報</h1>
+                    <h1>企業情報</h1>
                 </div>
             </header>
         </div>
     );
 };
 
-export default EmpHeader;
+export default CorpHeader;

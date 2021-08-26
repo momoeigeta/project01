@@ -13,13 +13,11 @@
 @media screen and (max-width:768px) {
     .backImg {
         /* margin-top: 149px; */
-        margin-top: 48px;
+        /* margin-top: 48px; */
         height: 100px;
         /* max-width: 100%; */
     }
 }
-
-
 
 
 /* EmpButton */
@@ -34,23 +32,10 @@
     justify-content: space-around; /* 各アイテムを均等に配置し,各アイテムの両側に半分の大きさの間隔を置く */
 }
 
-/* .EmpNBtn {
-    border-radius: 50%;
-    margin: 50px 50px 50px 50px;
-    background-color: rgb(116, 148, 253); 
-	border: none;   */
-    /*枠線を消す */
-	/* cursor: pointer;
-	width:200px;
-    height:200px;
-    padding: 0;
-} */
-
 .EmpBtn button {
     border-radius: 50%;
     margin: 50px 50px 50px 50px;
     background-color: rgb(116, 148, 253); 
-	border: none;  /*枠線を消す */
     border: solid rgb(92, 128, 248);
 	cursor: pointer;
 	width:200px;
@@ -58,32 +43,16 @@
     padding: 0;
 }
 
-
-/* .EmpNBtn .white {
-    color: white;
-    text-align: center;
-    padding: 0px;
-    margin: 5px;
-    height: 30px;
-    font-size: 25px;
-} */
 .EmpBtn .white {
     color: white;
     text-align: center;
     padding: 0px;
     margin: 5px;
-    height: 30px;
+    height: 40px;
     font-size: 25px;
+    font-weight: bold;
 }
 
-
-/* .EmpNBtn p {
-    color: red;
-    margin: 5px;
-    padding: 0px;
-    font-size: 15px;
-    text-shadow: 1px 1px 2px rgb(73, 60, 60);
-} */
 .EmpBtn p {
     color: red;
     margin: 5px;
@@ -92,49 +61,10 @@
     text-shadow: 1px 1px 2px rgb(73, 60, 60);
 }
 
-
-/* .EmpNBtn img {
-    width: 50px;
-    height: 50px;
-}  */
 .EmpBtn img {
     width: 50px;
     height: 50px;
 }
-
-
-/* .EmpMBtn {
-	border-radius: 50%;
-    margin: 50px 50px 50px 50px;
-    background-color: rgb(116, 148, 253); 
-	border: none;  
-	cursor: pointer;
-	width:200px;
-    height:200px;
-}
-
-.EmpMBtn .white {
-    color: white;
-    text-align: center;
-    padding: 0px;
-    margin: 5px;
-    height: 30px;
-    font-size: 25px;
-}
-
-.EmpMBtn p {
-    color: red;
-    margin: 5px;
-    padding: 0px;
-    font-size: 15px;
-    text-shadow: 1px 1px 2px rgb(73, 60, 60);
-}
-
-.EmpMBtn img {
-    height: 50px;
-    width: 50px;
-} */
-
 
 .char p {
     font-size: 20px;
@@ -142,14 +72,19 @@
     position: relative;
     padding-top: 50px;
     padding-left: 40px;
-    /* padding-right: 20px; */
+    padding-right: 20px;
+}
+@media screen and (max-width:768px) {
+    .char p {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:480px) {
     .char p {
     padding-right: 20px;
+    font-size: 16px;
     }
 }
-
 
 .char hr {
     text-align: right;
@@ -160,8 +95,16 @@
     color: black;
     background-color: black;
 }
-
-
+@media screen and (max-width:768px) {
+    .char hr {
+        width: 85%;
+    }
+}
+@media screen and (max-width:430px) {
+    .char hr {
+        width: 95%;
+    }
+}
 
 .shape1 {
     margin:  0;                     /* デフォルトCSS打ち消し */
@@ -184,17 +127,33 @@
     top: -45px;   
     left: 29%;                
     /* left: 395px;     */
-    
-    
 }
-
-@media screen and (max-width: 559px) {
-  .shape1::after {
-      top: -75px;
-     /* height: 70px; */
+@media screen and (max-width: 768px) {
+    .shape1::after {
+        left: 22%;
+        width: 70%;
+        top: -42px;
     }
 }
-
+/* @media screen and (max-width: 559px) {
+  .shape1::after {
+      top: -75px;
+    }
+} */
+@media screen and (max-width:430px) {
+    .shape1::after {
+        height: 75px;
+        width: 85%;
+        left: 10%;
+        top: -64px;
+    }
+}
+@media screen and (max-width:320px) {
+    .shape1::after {
+        height: 75px;
+        top: -63px;
+    }
+}
 .inta {
     text-align: left;
     font-size: 25px;
