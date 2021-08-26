@@ -20,7 +20,6 @@ const App = () => {
         <>
             <BrowserRouter>
                 <div>
-                <ScrollToTop />
 
                     <Header />
 
@@ -35,6 +34,7 @@ const App = () => {
                     <Route exact path={'/EmpInfoHome'} component={EmpInfoHome} />
 
                     <Bottom />
+                    <ScrollToTop />
 
                 </div>
             </BrowserRouter>

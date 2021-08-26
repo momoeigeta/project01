@@ -1,7 +1,11 @@
 #menubar {
 	height: 89px;
 }
-
+@media screen and (max-width:768px) {
+	#menubar {
+		height: 137px;
+	}
+}
 nav{
 	/* background:#333; */
 	/* color:#fff; */

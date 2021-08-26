@@ -4,6 +4,9 @@ import Force from './images/Force.png';
 import './styles/Accordion.css';
 import './styles/Header.css';
 
+import { Router } from 'react-router-dom';
+
+
 import {
     Accordion,
     AccordionItem,
@@ -42,6 +45,9 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const toggle = () => setOpen(!open);
 
+
+
+
     return (
         // <>
         <div id="menubar">
@@ -77,79 +83,78 @@ const Header = () => {
                     </ul>
 
                     {/* <header className="header"> */}
-                        <div className="mpsize">
+                    <div className="mpsize">
                         {/* <div className="topline" /> */}
-                            <Link to="/"><img src={Force} alt=""></img></Link>
-                            <button onClick={toggle}
-                                className="accordion__button"
-                            >{open ? '閉じる' : 'メニュー'}</button>
-                            <div className={open ? 'isOpen' : 'isClose'}>
+                        <Link to="/"><img src={Force} alt=""></img></Link>
+                        <button onClick={toggle}
+                            className="accordion__button"
+                        >{open ? '閉じる' : 'メニュー'}</button>
+                        <div className={open ? 'isOpen' : 'isClose'}>
 
 
-                                <Accordion allowZeroExpanded>
+                            <Accordion allowZeroExpanded>
 
 
-                                    <AccordionItem>
-                                        <AccordionItemHeading>
-                                            <AccordionItemButton>
-                                                <Link to="">企業情報</Link>
-                                            </AccordionItemButton>
-                                        </AccordionItemHeading>
-                                        <Link to="">
-                                            <AccordionItemPanel>
-                                                ごあいさつ
-                                            </AccordionItemPanel>
-                                        </Link>
-                                        <Link to="">
-                                            <AccordionItemPanel>
-                                                事業内容
-                                            </AccordionItemPanel>
-                                        </Link>
-                                        <Link to="">
-                                            <AccordionItemPanel>
-                                                会社概要
-                                            </AccordionItemPanel>
-                                        </Link>
-                                    </AccordionItem>
-
-                                    <AccordionItem>
-                                        <AccordionItemHeading>
-                                            <AccordionItemButton>
-                                                <Link to="/EmpInfoHome">採用情報</Link>
-                                            </AccordionItemButton>
-                                        </AccordionItemHeading>
-                                        <Link to="/MidCareer">
-                                            <AccordionItemPanel>
-                                                中途採用
-                                            </AccordionItemPanel>
-                                        </Link>
-                                        <Link to="/NewGrad">
-                                            <AccordionItemPanel>
-                                                新卒採用
-                                            </AccordionItemPanel>
-                                        </Link>
-                                    </AccordionItem>
-
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <Link to="">企業情報</Link>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
                                     <Link to="">
-                                        <li>アクセス </li>
+                                        <AccordionItemPanel>
+                                            ごあいさつ
+                                        </AccordionItemPanel>
                                     </Link>
-                                    <Link to="/ContactHome">
-                                        <li>
-                                            お問い合わせ
-                                        </li>
+                                    <Link to="">
+                                        <AccordionItemPanel>
+                                            事業内容
+                                        </AccordionItemPanel>
                                     </Link>
+                                    <Link to="">
+                                        <AccordionItemPanel>
+                                            会社概要
+                                        </AccordionItemPanel>
+                                    </Link>
+                                </AccordionItem>
 
-                                </Accordion>
-                            </div>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <Link to="/EmpInfoHome">採用情報</Link>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <Link to="/MidCareer">
+                                        <AccordionItemPanel>
+                                            中途採用
+                                        </AccordionItemPanel>
+                                    </Link>
+                                    <Link to="/NewGrad">
+                                        <AccordionItemPanel>
+                                            新卒採用
+                                        </AccordionItemPanel>
+                                    </Link>
+                                </AccordionItem>
 
+                                <Link to="">
+                                    <li>アクセス </li>
+                                </Link>
+                                <Link to="/ContactHome">
+                                    <li>
+                                        お問い合わせ
+                                    </li>
+                                </Link>
 
+                            </Accordion>
                         </div>
+
+
+                    </div>
                     {/* </header> */}
 
                 </nav>
 
             </header>
-
         </div>
 
         // {/* </> */}

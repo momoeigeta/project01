@@ -20,7 +20,7 @@ body {
 @media screen and (max-width:768px) {
     .back {
         /* margin-top: 149px; */
-        margin-top: 48px;
+        /* margin-top: 48px; */
 		height: 100px;
 		/* padding-top: 50px; */
     }

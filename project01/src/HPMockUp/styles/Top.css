@@ -3,7 +3,7 @@
 }
 @media screen and (max-width:768px) {
     .Top {
-        margin-top: 48px;
+        /* margin-top: 48px; */
         height: 300px;
     }
 }
