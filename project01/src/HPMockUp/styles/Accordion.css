@@ -44,7 +44,8 @@
     border-right: 2px solid currentColor;
     transform: rotate(-45deg);
     position: absolute;
-    top: 1.6em;
+    /* top: 1.6em; */
+    top: 1.2em;
     left: 3em;
 }
 

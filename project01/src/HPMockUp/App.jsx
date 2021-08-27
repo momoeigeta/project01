@@ -13,15 +13,20 @@ import EmpInfoHome from './EmpFile/EmpInfoHome';
 import Header from './Header';
 import Bottom from './Bottom';
 import ScrollToTop from './ScrollToTop';
+import Dropdown3 from './Header2';
+import Header3 from './Header3';
 
 const App = () => {
 
     return (
         <>
-            <BrowserRouter>
-                <div>
 
+            <BrowserRouter>
+
+                <div>
                     <Header />
+                    {/* <Header3 /> */}
+                    <Dropdown3 />
 
                     <Route exact path={'/'} component={Home} />
                     <Route exact path={'/Contact'} component={Contact} />

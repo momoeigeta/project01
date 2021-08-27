@@ -19,7 +19,7 @@ import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 // import { useEffect } from 'react/cjs/react.production.min';
 
 
-const Header = () => {
+const Header3 = () => {
 
     const [shouldHideHeader, setShouldHideHeader] = useState(false);
     const [shouldShowshade, setShouldShowshade] = useState(false);
@@ -44,11 +44,11 @@ const Header = () => {
 
 
     const [open, setOpen] = useState(false);
-    // const menuRef = useRef(null);
+    const menuRef = useRef(null);
 
-    // useEffect(() => {
-    //     open && menuRef.current.focus();
-    // }, [open]);
+    useEffect(() => {
+        open && menuRef.current.focus();
+    }, [open]);
 
     const toggle = () => setOpen(!open);
 
@@ -113,20 +113,20 @@ const Header = () => {
                             {/* <div className="topline" /> */}
                         <Link to="/"><img src={Force} alt=""></img></Link>
                         
-
-                            <button
-                                
-                                onClick={toggle}
-                                className="accordion__button"
-                            >{open ? '閉じる' : 'メニュー'}</button>
-                            <div className={open ? 'isOpen' : 'isClose'}>
-
-                            {/* <div
+                        <div
                             onClick={() => setOpen(!open)}
                             ref={menuRef}
                             onBlur={() => setOpen(false)}
                             tabIndex={0}
-                        > */}
+                        >
+
+                            <button
+                                
+                                // onClick={toggle}
+                                className="accordion__button"
+                            >{open ? '閉じる' : 'メニュー'}</button>
+                            <div hidden={!open}>
+
 
 
                                 <Accordion allowZeroExpanded>
@@ -135,7 +135,7 @@ const Header = () => {
                                     <AccordionItem>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                <Link to="" onClick={() => toggle(false)}>企業情報</Link>
+                                                <Link to="" >企業情報</Link>
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <Link to="">
@@ -191,7 +191,7 @@ const Header = () => {
                             </div>
                         </div>
 
-                    {/* </div> */}
+                    </div>
                     {/* </header> */}
 
                 </nav>
@@ -204,4 +204,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default Header3;
