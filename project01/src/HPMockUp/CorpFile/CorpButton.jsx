@@ -11,7 +11,7 @@ const CorpButton = () => {
     return (
         <div className="Corp">
             <div className="CorpBtn">
-                <Link to="/">
+                <Link to="/Greeting">
                     <button>
                         <p className="white">ごあいさつ</p>
                         <img src={Greeting} alt="" />
