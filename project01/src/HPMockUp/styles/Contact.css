@@ -11,6 +11,7 @@ body {
 .back {
     background-size:  cover;   
     height: 200px;
+	background-position:center bottom;     
     background-image: url(../images/ContactTop.jpg);
 
 	/* margin-top: 120px; */

@@ -102,6 +102,188 @@
 
 /* Greeting */
 
-.Greeting backImg {
-
+.Greeting .backImg {
+    background-image: url(../images/GreetingTop.jpg);
 }
+
+.Greeting .red {
+    text-shadow: none;
+    font-size: 30px;
+}
+  @media all and (max-width: 768px) {
+    .Greeting .red {
+        font-size: 27px;
+    }
+  }
+  @media all and (max-width: 425px) {
+    .Greeting .red {
+        font-size: 25px;
+    }
+  }
+.Greeting h2 {
+    font-size: 30px;
+    margin: 50px 0px 30px 0px;
+}
+  @media all and (max-width: 768px) {
+    .Greeting h2 {
+        font-size: 27px;
+    }
+  }
+  @media all and (max-width: 425px) {
+    .Greeting h2 {
+        font-size: 25px;
+        margin: 20px 20px;
+    }
+  }
+.Greeting hr {
+    position: absolute;
+    width: 970px;
+    top: 380px;
+    height: 1px;
+    background-color: black;
+    border-width: 0px;
+}
+
+  @media all and (max-width: 1440px) {
+  .Greeting hr {
+      width: 1000px;
+  }
+  }
+  @media all and (max-width: 1024px) {
+    .Greeting hr {
+      width: 800px;
+  }
+  }
+  @media all and (max-width: 768px) {
+    .Greeting hr {
+      top: 320px;
+      width: 640px;
+  }
+  }
+  @media all and (max-width: 425px) {
+    .Greeting hr {
+      top: 330px;
+    }
+  }
+
+  .Greeting .around {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      margin-top: 50px;
+  }
+  @media all and (max-width: 425px) {
+    .Greeting .around {
+        display: block;
+    }
+  }
+
+  .Greeting p {
+      text-align: left;
+      /* margin: 20px; */
+      margin-left: 40px;
+      margin-right: 10px;
+  }
+  @media all and (max-width: 768px) {
+      .Greeting p {
+          font-size: 15px;
+      }
+  }
+  @media all and (max-width: 425px) {
+    .Greeting p {
+        margin: 20px;
+    }
+  }
+  .Greeting img {
+      height: 200px;
+      width: 150px;
+      /* float: right; */
+      margin: 15px 100px 10px 100px;
+  }
+
+  @media all and (max-width: 768px) {
+    .Greeting img {
+      margin: 15px 50px 10px 50px;
+
+     }
+  }
+  .Greeting .picFrame p {
+      margin: 0px;
+      text-align: center;
+  }
+
+  /* Services */
+
+  .Services .backImg {
+    background-image: url(../images/ServicesTop.jpg);
+  }
+
+  .Services h2 {
+      color: blue;
+      text-shadow: 2px 4px 3px rgb(73 60 60);
+      margin: 50px 20px 0px 20px;
+  }
+  @media all and (max-width: 425px) {
+    .Services h2 {
+        margin: 20px 20px 0px 20px;
+    }
+  }
+
+  .Services hr {
+    border-width: 0px;
+    background-color: black;
+    height: 1px;
+    /* margin-top: 0px; */
+  }
+
+  .Services .center {
+      text-align: center;
+      margin: 30px 150px 50px 150px;
+      margin-left: 25%;
+      margin-right: 25%;
+      /* width: 500px; */
+  }
+  @media all and (max-width: 768px) {
+    .Services .center {
+        margin: 20px 50px 50px 50px;
+    }
+  }
+  @media all and (max-width: 425px) {
+    .Services .center {
+        margin: 20px;
+    }
+  }
+
+  .Services p {
+      text-align: left;
+      display: inline-block;
+      margin-left: 0px;
+  }
+  @media all and (max-width: 425px) {
+    .Services p {
+        font-size: 14px;
+    }
+  }
+
+
+  /* Overview */
+
+  .Overview .backImg {
+    background-image: url(../images/OverviewTop.jpg);
+  }
+
+  .Overview .left {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    border: none;
+  }
+
+  .Overview a {
+      text-decoration: underline;
+      color: #0000ff;
+  }
+
+  .Overview a:hover {
+    color: #2787e0;
+  }

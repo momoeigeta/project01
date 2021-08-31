@@ -28,10 +28,10 @@ const Bottom = () => {
                 <Link to="/"><img className="force" src={ForceWhite} alt=""></img></Link>
 
                 <ul className="menu-item">
-                    <Link to=""><li className="big">企業情報</li></Link>
-                    <Link to=""><li>ごあいさつ</li></Link>
-                    <Link to=""><li>事業内容</li></Link>
-                    <Link to=""><li>会社概要</li></Link>
+                    <Link to="CorpHome"><li className="big">企業情報</li></Link>
+                    <Link to="Greeting"><li>ごあいさつ</li></Link>
+                    <Link to="Services"><li>事業内容</li></Link>
+                    <Link to="Overview"><li>会社概要</li></Link>
                 </ul>
                 <ul className="menu-item">
                     <Link to="/EmpInfoHome"><li className="big">採用情報</li></Link>

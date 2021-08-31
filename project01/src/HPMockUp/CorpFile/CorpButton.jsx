@@ -18,14 +18,14 @@ const CorpButton = () => {
                     </button>
                 </Link>
 
-                <Link to="/">
+                <Link to="/Services">
                     <button>
                         <p className="white">事業内容</p>
                         <img src={Services} alt="" />
                     </button>
                 </Link>
 
-                <Link to="/">
+                <Link to="/Overview">
                     <button>
                         <p className="white">会社概要</p>
                         <img src={Overview} alt="" />

@@ -59,9 +59,9 @@ const Header = () => {
                     <ul className="pcsize">
                         <li class="has-child"><Link to="CorpHome">企業情報</Link>
                             <ul>
-                                <li><Link to="">ごあいさつ</Link></li>
-                                <li><Link to="">事業内容</Link></li>
-                                <li><Link to="">会社概要</Link></li>
+                                <li><Link to="Greeting">ごあいさつ</Link></li>
+                                <li><Link to="Services">事業内容</Link></li>
+                                <li><Link to="Overview">会社概要</Link></li>
                             </ul>
                             <div className="ver1"></div>
                         </li>
@@ -101,23 +101,23 @@ const Header = () => {
                                 <AccordionItem>
                                     <AccordionItemHeading>
                                         <AccordionItemButton>
-                                            <a href="/"
+                                            <a href="/CorpHome"
                                                 onClick={() => toggle()}
                                             >
                                                 企業情報</a>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
-                                    <Link to="">
+                                    <Link to="Greeting">
                                         <AccordionItemPanel onClick={"expanded"} >
                                             ごあいさつ
                                         </AccordionItemPanel>
                                     </Link>
-                                    <Link to="" >
+                                    <Link to="Services" >
                                         <AccordionItemPanel onClick={"expanded"}>
                                             事業内容
                                         </AccordionItemPanel>
                                     </Link>
-                                    <Link to="">
+                                    <Link to="Overview">
                                         <AccordionItemPanel onClick={"expanded"}>
                                             会社概要
                                         </AccordionItemPanel>

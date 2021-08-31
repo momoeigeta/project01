@@ -1,7 +1,9 @@
 /* EmpHeader */
 .backImg {
     background-size:  cover;   
+    background-position:center bottom;     
     height: 200px;
+    width: 100%;
     background-image: url(../images/EmpTop.jpg);
 
     /* margin-top: 120px; */

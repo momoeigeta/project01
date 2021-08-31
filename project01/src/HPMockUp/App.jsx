@@ -12,6 +12,8 @@ import MidCareerConfirm from './EmpFile/MidCareerConfirm';
 import EmpInfoHome from './EmpFile/EmpInfoHome';
 import CorpHome from './CorpFile/CorpHome';
 import Greeting from './CorpFile/Greeting';
+import Services from './CorpFile/Services';
+import Overview from './CorpFile/Overview';
 
 import Header from './Header';
 import Bottom from './Bottom';
@@ -39,6 +41,8 @@ const App = () => {
                     <Route exact path={'/EmpInfoHome'} component={EmpInfoHome} />
                     <Route exact path={'/CorpHome'} component={CorpHome} />
                     <Route exact path={'/Greeting'} component={Greeting} />
+                    <Route exact path={'/Services'} component={Services} />
+                    <Route exact path={'/Overview'} component={Overview} />
                     <Bottom />
                     <ScrollToTop />
 
