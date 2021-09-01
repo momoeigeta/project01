@@ -39,7 +39,7 @@ const Bottom = () => {
                     <Link to="/NewGrad"><li>新卒採用</li></Link>
                 </ul>
                 <ul className="menu-item">
-                    <Link to=""><li>アクセス</li></Link>
+                    <Link to="/Access"><li>アクセス</li></Link>
                     <Link to="/ContactHome"><li>お問い合わせ</li></Link>
                     <Link to=""><li>プライバシーポリシー</li></Link>
                     <Link to=""><li>リンク</li></Link>

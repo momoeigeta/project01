@@ -272,12 +272,12 @@
     background-image: url(../images/OverviewTop.jpg);
   }
 
-  .Overview .left {
+  /* .Overview .left {
     text-align: left;
     display: inline-block;
     margin: 0;
     border: none;
-  }
+  } */
 
   .Overview a {
       text-decoration: underline;
@@ -287,3 +287,21 @@
   .Overview a:hover {
     color: #2787e0;
   }
+
+  .Overview table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+  @media all and (max-width: 768px) {
+    .Overview table {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  }
+
+  .Overview table ul {
+      padding: 0px 10px;
+    /* padding-left: 10px; */
+    }

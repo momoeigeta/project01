@@ -48,6 +48,8 @@ const Header = () => {
     //     window.location.reload();
     // }
 
+    // const expanded = AccordionItemPanel("expanded");
+
     return (
         // <>
         <div id="menubar">
@@ -57,7 +59,7 @@ const Header = () => {
                     <div className="topline" />
 
                     <ul className="pcsize">
-                        <li class="has-child"><Link to="CorpHome">企業情報</Link>
+                        <li className="has-child"><Link to="CorpHome">企業情報</Link>
                             <ul>
                                 <li><Link to="Greeting">ごあいさつ</Link></li>
                                 <li><Link to="Services">事業内容</Link></li>
@@ -66,7 +68,7 @@ const Header = () => {
                             <div className="ver1"></div>
                         </li>
 
-                        <li class="has-child"><Link to="/EmpInfoHome">採用情報</Link>
+                        <li className="has-child"><Link to="/EmpInfoHome">採用情報</Link>
                             <ul>
                                 <li><Link to="/MidCareer">中途採用</Link></li>
                                 <li><Link to="/NewGrad">新卒採用</Link></li>
@@ -74,7 +76,7 @@ const Header = () => {
                         </li>
 
                         <Link to="/"><img src={Force} alt=""></img></Link>
-                        <li><Link to="">アクセス</Link>
+                        <li><Link to="Access">アクセス</Link>
                             <div className="ver2"></div>
                         </li>
 
@@ -107,44 +109,46 @@ const Header = () => {
                                                 企業情報</a>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
-                                    <Link to="Greeting">
-                                        <AccordionItemPanel onClick={"expanded"} >
+                                    {/* <Link to="Greeting"> */}
+                                    <a href="Greeting">
+                                        <AccordionItemPanel>
                                             ごあいさつ
                                         </AccordionItemPanel>
-                                    </Link>
-                                    <Link to="Services" >
-                                        <AccordionItemPanel onClick={"expanded"}>
+                                    </a>
+                                    {/* </Link> */}
+                                    <a href="Services" >
+                                        <AccordionItemPanel>
                                             事業内容
                                         </AccordionItemPanel>
-                                    </Link>
-                                    <Link to="Overview">
-                                        <AccordionItemPanel onClick={"expanded"}>
+                                    </a>
+                                    <a href="Overview">
+                                        <AccordionItemPanel>
                                             会社概要
                                         </AccordionItemPanel>
-                                    </Link>
+                                    </a>
                                 </AccordionItem>
 
                                 <AccordionItem>
                                     <AccordionItemHeading>
                                         <AccordionItemButton >
                                             <a href="/EmpInfoHome"
-                                            onClick={toggle}
+                                                onClick={toggle}
                                             >採用情報</a>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
-                                    <Link to="/MidCareer" >
-                                        <AccordionItemPanel onClick={"expanded"}>
+                                    <a href="/MidCareer" >
+                                        <AccordionItemPanel>
                                             中途採用
                                         </AccordionItemPanel>
-                                    </Link>
-                                    <Link to="/NewGrad" >
-                                        <AccordionItemPanel onClick={"expanded"}>
+                                    </a>
+                                    <a href="/NewGrad" >
+                                        <AccordionItemPanel>
                                             新卒採用
                                         </AccordionItemPanel>
-                                    </Link>
+                                    </a>
                                 </AccordionItem>
 
-                                <Link to="" onClick={toggle}>
+                                <Link to="Access" onClick={toggle}>
                                     <li>アクセス </li>
                                 </Link>
                                 <Link to="/ContactHome" onClick={toggle}>

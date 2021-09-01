@@ -1,0 +1,68 @@
+.Access .backImg {
+    background-image: url(../images/AccessTop.jpg);
+}
+
+.Access .around {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+@media all and (max-width: 425px) {
+    .Access .around {
+        display: block;
+    }
+}
+
+
+
+.Access iframe {
+    border: none;
+    width: 450px;
+    /* height: 300px; */
+    margin: 10px;
+    border: solid thin  rgb(27, 108, 238);
+}
+  @media all and (max-width: 768px) {
+    .Access iframe {
+      width: 300px;
+    }
+  }
+  @media all and (max-width: 425px) {
+      .Access iframe {
+          width: 350px;
+      }
+  }
+  @media all and (max-width: 375px) {
+    .Access iframe {
+        width: 250px;
+    }
+  }
+
+.Access .paling {
+    background-color: rgb(215, 240, 247);
+    border-radius: 20px;
+    border: solid rgb(27, 108, 238);
+    box-shadow: 1px 1px 2px rgb(136 125 125);
+}
+
+.Access .block {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.Access .le {
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: rgb(27, 108, 238);
+    font-weight: bold;
+}
+
+.Access p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
