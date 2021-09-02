@@ -29,7 +29,7 @@ const MidCareerForm = () => {
                     <form onSubmit={handleSubmit(onSubmitData)} className="contactBox">
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="name">お名前
+                            <div htmlFor="name">お名前
                                 <span className="caution">*</span>
                                 <input type="text" id="name" name="name"
                                     className="Form-Item-Input"
@@ -37,11 +37,11 @@ const MidCareerForm = () => {
                                 />
                                 {errors.name &&
                                     <p className="error">お名前を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="company">会社名・法人名・団体名
+                            <div htmlFor="company">会社名・法人名・団体名
                                 <span className="caution">*</span>
                                 {/* <span className="mgr10">※個人のお客様は「個人」とご記入ください</span> */}
                                 <p className="company">※個人のお客様は「個人」とご記入ください</p>
@@ -51,11 +51,11 @@ const MidCareerForm = () => {
                                 />
                                 {errors.company &&
                                     <p className="error">会社名・法人名・団体名を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="department">
+                            <div htmlFor="department">
                                 部署・役職等
                                 <span className="caution">*</span>
                                 <input type="text" id="department" name="department"
@@ -64,11 +64,11 @@ const MidCareerForm = () => {
                                 />
                                 {errors.department &&
                                     <p className="error">部署・役職等を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="email">メールアドレス
+                            <div htmlFor="email">メールアドレス
                                 <span className="caution">*</span>
                                 <input type="text" id="email" name="email"
                                     className="Form-Item-Input"
@@ -81,11 +81,11 @@ const MidCareerForm = () => {
                                     <p className="error">メールアドレスを入力してください</p>}
                                 {errors.email?.type === "pattern" &&
                                     <p className="error">正しいメールアドレスを入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="tel">電話番号
+                            <div htmlFor="tel">電話番号
                                 <span className="caution">*</span>
                                 <input type="tel" id="tel" name="tel"
                                     className="Form-Item-Input"
@@ -98,11 +98,11 @@ const MidCareerForm = () => {
                                     <p className="error">電話番号を入力してください</p>}
                                 {errors.tel?.type === "pattern" &&
                                     <p className="error">半角数字で入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="postalCode">郵便番号
+                            <div htmlFor="postalCode">郵便番号
                                 <span className="caution">*</span>
                                 <input type="postalCode" id="postalCode" name="postalCode"
                                     className="Form-Item-Input"
@@ -115,11 +115,11 @@ const MidCareerForm = () => {
                                     <p className="error">郵便番号を入力してください</p>}
                                 {errors.postalCode?.type === "pattern" &&
                                     <p className="error">ハイフンを入れて正しい郵便番号を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="prefectures">都道府県
+                            <div htmlFor="prefectures">都道府県
                                 <span className="caution">*</span>
                                 <input type="address-level1" id="prefectures" name="prefectures"
                                     className="Form-Item-Input"
@@ -129,11 +129,11 @@ const MidCareerForm = () => {
                                 />
                                 {errors.prefectures &&
                                     <p className="error">都道府県を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="address">ご住所
+                            <div htmlFor="address">ご住所
                                 <span className="caution">*</span>
                                 <input type="text" id="address" name="address"
                                     className="Form-Item-Input"
@@ -141,11 +141,11 @@ const MidCareerForm = () => {
                                 />
                                 {errors.address &&
                                     <p className="error">ご住所を入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className="Form-Item-Label">
-                            <p htmlFor="message">メッセージ本文
+                            <div htmlFor="message">メッセージ本文
                                 <span className="caution">*</span>
                                 <textarea id="message" name="message"
                                     className="Form-Item-Textarea"
@@ -157,7 +157,7 @@ const MidCareerForm = () => {
                                 />
                                 {errors.message &&
                                     <p className="error">メッセージを300文字以内で入力してください</p>}
-                            </p>
+                            </div>
                         </div>
 
                         <div className='btnBox'>

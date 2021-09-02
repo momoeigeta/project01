@@ -35,38 +35,38 @@ const EmpButton = () => {
                 <p>経験者・未経験者問わずFORCEで一緒に成長しませんか？</p>
                 <hr></hr>
             </div>
-            <div class="shape1" />
+            <div className="shape1" />
             <p className="inta">社員インタビュー</p>
             <div className="shape2" />
             <div className="shape3" />
 
 
             <div id="cardlayout-wrap">
-                <section class="card-list">
+                <section className="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} alt="" /></figure>
+                        <figure className="card-figure"><img src={Person} alt="" /></figure>
                         <h2 className="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
-                    <p class="card-text-tax">インタビュー要約ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <p className="card-text-tax">インタビュー要約ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
                 </section>
 
-                <section class="card-list">
+                <section className="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} alt="" /></figure>
-                        <h2 class="card-title1">職種</h2>
+                        <figure className="card-figure"><img src={Person} alt="" /></figure>
+                        <h2 className="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
-                    <p class="card-text-tax">インタビュー要約</p>
+                    <p className="card-text-tax">インタビュー要約</p>
                 </section>
 
-                <section class="card-list">
+                <section className="card-list">
                     <div className="box">
-                        <figure class="card-figure"><img src={Person} alt="" /></figure>
-                        <h2 class="card-title1">職種</h2>
+                        <figure className="card-figure"><img src={Person} alt="" /></figure>
+                        <h2 className="card-title1">職種</h2>
                         <h2 className="card-title2">名前</h2>
                     </div>
-                    <p class="card-text-tax">インタビュー要約</p>
+                    <p className="card-text-tax">インタビュー要約</p>
                 </section>
 
             </div>

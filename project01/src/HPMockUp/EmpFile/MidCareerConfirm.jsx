@@ -36,12 +36,12 @@ const MidCareerConfirm = (props) => {
 
                     {/* <div class="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             会社名・法人名・団体名
                             <span className="caution">*</span>
 
                             <p className="company">※個人のお客様は「個人」とご記入ください</p>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.company}
@@ -72,10 +72,10 @@ const MidCareerConfirm = (props) => {
                     {/* </div> */}
 
                     {/* <div class="Form-Item"> */}
-                    <div class="Form-Item-Label">
+                    <div className="Form-Item-Label">
                         <p>
                             電話番号
-                            <span class="caution">*</span>
+                            <span className="caution">*</span>
                         </p>
                     </div>
                     <p className="value">

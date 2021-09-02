@@ -37,7 +37,7 @@ const CorpButton = () => {
                     お客様に必要とされる会社であることを目標としています。</p>
                 <hr></hr>
             </div>
-            <div class="shape1" />
+            <div className="shape1" />
 
         </div>
     );

@@ -8,10 +8,10 @@ const EmpInfoHome = () => {
 
     return (
         <div id="EmpInfoHome">
-            <body className="body">
+            {/* <body className="body"> */}
                 <EmpHeader />
                 <EmpButton />
-            </body>
+            {/* </body> */}
         </div>
     )
 };

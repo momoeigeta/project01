@@ -8,15 +8,11 @@ const ContactHome = () => {
 
     return (
         <div>
-            <body className="body">
-
-                <div id="ContactHome">
-                    <ContactHeader />
-                    <ContactButton />
-                </div>
-                <Footer />
-            </body>
-
+            <div id="ContactHome">
+                <ContactHeader />
+                <ContactButton />
+            </div>
+            <Footer />
         </div >
     );
 };

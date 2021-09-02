@@ -149,55 +149,61 @@ a:active {
 }
 
 .Form {
-	/* margin-top: 80px; */
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 720px;
   }
 
-
  .Form-Item {
-	/* border-top: 1px solid #ddd; */
 	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-bottom: 30px;
 	width: 100%;
-	/* display: flex; */
 	align-items: center;
   }
 
 @media screen and (max-width: 480px) {
 	.Form-Item {
-		/* padding-left: 14px; */
-		/* padding-right: 14px; */
 		padding-top: 16px;
-		/* padding-bottom: 16px; */
-		flex-wrap: wrap;
+		padding-bottom: 16px;
 	}
 }
 
   .Form-Item-Label {
 	width: 100%;
 	letter-spacing: 0.05em;
-	/* font-weight: bold; */
 	font-size: 16px;
     text-align: left;
+	max-width: inherit;
+	display: flex;
+	align-items: center;
+
   }
   @media screen and (max-width: 480px) {
 	.Form-Item-Label {
-	  max-width: inherit;
-	  display: flex;
-	  align-items: center;
 	  font-size: 15px;
 	}
   }
 
   .Form-Item-Label p {
 	  width: 100%;
+	  margin-right: 30px;
+	  margin-left: 30px;
   }
-  @media screen and (max-width: 480px) {
+  .Form-Item-Label div {
+	  width: 100%;
+	  margin-right: 30px;
+	  margin-left: 30px;
+	  margin: 16px 30px;
+  }
+
+
+  /* @media screen and (max-width: 480px) {
 	.Form-Item-Label p {
-		/* max-width: 400px; */
-		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+  } */
+  @media screen and (max-width: 480px) {
+	.Form-Item-Label div {
 		margin-bottom: 10px;
 	}
   }
@@ -206,60 +212,52 @@ a:active {
 	border: 1px solid #ddd;
 	border-radius: 6px;
 	margin-left: 40px;
+	/* margin-left: 30px; */
+
+	margin-top: 10px;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	flex: 1;
 	width: 100%;
-	max-width: 600px;
 	background: #eaedf2;
 	font-size: 18px;
-    display: block;
+    /* display: block; */
 	overflow-wrap : break-word;
-	margin-top: 10px;
-/* margin-right: 15px; */
-/* box-sizing:border-box; */
-
+	box-sizing:border-box;
+	/* margin-right: 30px; */
+  }
+  @media screen and (max-width: 768px) {
+	.Form-Item-Input {
+		margin-left: 0px;
+	}
   }
   @media screen and (max-width: 480px) {
 	.Form-Item-Input {
-	  margin-left: 0px;
-	  /* margin-top: 18px; */
-	  /* flex: inherit; */
 	  font-size: 15px;
-	  padding-top: 5px;
-	  padding-bottom: 5px;
-	  margin-right: 10px;
-	  display: block;
-	  box-sizing:border-box;
       }
   }
 
   .Form-Item-Textarea {
 	border: 1px solid #ddd;
 	border-radius: 20px;
+	margin-top: 10px;
 	margin-left: 40px;
 	padding-left: 1em;
 	padding-right: 1em;
-	height: 216px;
+	height: 200px;
 	flex: 1;
 	width: 100%;
-	max-width: 600px;
 	background: #eaedf2;
 	font-size: 18px;
     display: block;
-	margin-top: 10px;
+	box-sizing:border-box;
 }
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
 	.Form-Item-Textarea {
-	  /* margin-top: 18px; */
 	  margin-left: 0px;
-	  height: 200px;
 	  flex: inherit;
 	  font-size: 15px;
-	  box-sizing:border-box;
-	  /* margin-right: 30px; */
 	}
   }
 
@@ -304,7 +302,7 @@ a:active {
 .value {
 	text-align: left;
     margin-left: 60px;
-	max-width: 600px;
+	/* max-width: 600px; */
 	overflow-wrap : break-word;
 
 	border: 1px solid #ddd;
@@ -316,9 +314,11 @@ a:active {
     padding-top: 5px;
 	/* padding-bottom: 5px; */
 	padding-bottom: 2px;
-
 	/* font-size: 18px; */
+	margin-right: 30px;
+	margin-top: 0px;
 }
+
 @media screen and (max-width: 480px) {
 	.value {
 	  margin-left: 30px;
@@ -326,7 +326,6 @@ a:active {
 	  margin-top: 0px;
 	  flex: inherit;
 	  font-size: 15px;
-	  margin-right: 30px;
       }
   }
 
@@ -341,14 +340,16 @@ a:active {
 	}
 }
 
-.error{
+ p.error{
     color: red;
     font-size: 12px;
     padding: 4px;
+	/* margin: 0px; */
   }
-  @media screen and (max-width: 480px) {
-	  .error {
+  @media screen and (max-width: 768px) {
+	 p.error {
 		margin-left: 0px;  
+		margin: 0px;
 	  }
 }
 
@@ -361,8 +362,7 @@ a:active {
 	}
 }
 
-@media screen and (max-width: 480px) {
-.company {
+
+   div .company {
 	margin: 0px;
-}
 }
