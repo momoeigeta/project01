@@ -8,10 +8,10 @@ const ContactConfirm = (props) => {
     const state = location.state;
 
     return (
-        <>
+        <div className="ContactHeader">
             <div>
                 <header className="header" >
-                    <div className="back">
+                    <div className="backImg">
 
                         <h1 className="f">お問い合わせ</h1>
                         <h1 className="f">確認画面</h1>
@@ -154,7 +154,7 @@ const ContactConfirm = (props) => {
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
