@@ -76,6 +76,10 @@ p {
     font-weight: normal;
 	margin-top: 0px;
 }
+.Footer {
+	margin-bottom: 50px;
+}
+
 @media screen and (max-width: 768px) {
 	.c {
     margin: 0px 5% 0px 5%;

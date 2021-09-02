@@ -66,6 +66,7 @@
     list-style: none;
     text-align: left;
     padding-left: 10%; 
+    margin-top: 20px;
   }
   @media screen and (max-width:768px) {
     .bottom ul{
@@ -89,6 +90,8 @@
       font-size: 12px;
     }
   }
+
+
  .bottom a {
       color: #fff;
 }
