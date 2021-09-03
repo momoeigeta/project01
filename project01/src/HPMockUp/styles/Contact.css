@@ -57,6 +57,11 @@ p {
 		font-size: 30px;
 	}
 }
+@media screen and (max-width: 480px) {
+	.red {
+		font-size: 25px;
+	}
+}
 
 .c {
     font-size: 24px;
@@ -67,6 +72,11 @@ p {
 	.c {
     margin: 0px 5% 0px 5%;
 	font-size: 20px;
+	}
+  }
+  @media screen and (max-width: 480px) {
+	.c {
+	font-size: 17px;
 	}
   }
 
@@ -115,9 +125,15 @@ p {
      font-size: 15px;
 	}
    }
+   @media screen and (max-width: 480px) {
+	   #contact p {
+		   margin-left: 25px;
+	   }
+   }
 
 .caution {
     color: red;
+	margin-right: 30px;
 }
 
 .line {
@@ -214,7 +230,8 @@ a:active {
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	margin-top: 10px;
-	margin-left: 40px;
+	/* margin-left: 40px; */
+	margin-left: 30px;
 	padding-left: 1em;
 	padding-right: 1em;
 	height: 200px;

@@ -146,19 +146,24 @@
 
   @media all and (max-width: 1440px) {
   .Greeting hr {
-      width: 1000px;
+      width: 70%;
   }
   }
   @media all and (max-width: 1024px) {
     .Greeting hr {
-      width: 800px;
+      width: 80%;
   }
   }
   @media all and (max-width: 768px) {
     .Greeting hr {
       top: 320px;
-      width: 640px;
+      width: 85%;
   }
+  }
+  @media all and (max-width: 710px) {
+      .Greeting hr {
+          width: 100%;
+      }
   }
   @media all and (max-width: 425px) {
     .Greeting hr {
@@ -302,6 +307,9 @@
   }
 
   .Overview table ul {
-      padding: 0px 10px;
-    /* padding-left: 10px; */
+      padding: 0px;
+    }
+
+    .Overview table td {
+        padding: 0px 10px;
     }

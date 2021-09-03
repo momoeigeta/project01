@@ -200,7 +200,7 @@
 
 #cardlayout-wrap {
     position: relative;
-    display: -webkit-box;     /* 横並び */
+    display: -webkit-box;      /* 横並び */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -254,6 +254,7 @@
 /* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
 @media all and (min-width: 992px) {
     .card-list {
+        /* margin: 0.5em 0; */
         width: calc(90% / 3); /* 96%幅を3で割るという指定 */
 }
     
@@ -365,8 +366,10 @@ background-color: rgb(183, 231, 252);
 table th, table td {
     border: solid 1px black;
 }
+
 table ul {
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 table li {
@@ -394,12 +397,17 @@ h3 {
     text-shadow: 1px 1px 2px rgb(136, 125, 125);
     margin-bottom: 5px;
 }
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     h3 {
-        margin-left: 10px;
-        font-size: 18px;
+        margin-left: 50px;
     }
-} */
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        margin-left: 30px;
+    }
+}
 
 
 .left {
@@ -410,11 +418,19 @@ h3 {
     margin-top: 0px;
     margin-right: 5%;
 }
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .left {
-margin-left: 10px;
+        margin-left: 50px;
+        padding-left: 20px;
     }
-} */
+}
+
+@media screen and (max-width: 480px) {
+    .left {
+        margin-left: 30px;
+        padding-left: 20px;
+    }
+}
 
 .mynaviBtn {
     padding: 0;

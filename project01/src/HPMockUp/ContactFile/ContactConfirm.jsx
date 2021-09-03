@@ -24,10 +24,10 @@ const ContactConfirm = (props) => {
                 <div className="Form-Item">
                     {/* <div className='contactBox'> */}
                     <div className="Form-Item-Label" >
-                        <p>
+                        <div>
                             お名前
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.name}
@@ -57,10 +57,10 @@ const ContactConfirm = (props) => {
                     {/* </div> */}
                     {/* <div class="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             部署・役職等
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.department}
@@ -69,10 +69,10 @@ const ContactConfirm = (props) => {
 
                     {/* <div className="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             メールアドレス
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.email}
@@ -81,10 +81,10 @@ const ContactConfirm = (props) => {
 
                     {/* <div class="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             電話番号
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.tel}
@@ -93,10 +93,10 @@ const ContactConfirm = (props) => {
 
                     {/* <div className="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             郵便番号
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.postalCode}
@@ -104,10 +104,10 @@ const ContactConfirm = (props) => {
                     {/* </div> */}
                     {/* <div className="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             都道府県
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.prefectures}
@@ -115,10 +115,10 @@ const ContactConfirm = (props) => {
                     {/* </div> */}
                     {/* <div className="Form-Item"> */}
                     <div className="Form-Item-Label">
-                        <p>
+                        <div>
                             ご住所
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.address}
@@ -127,10 +127,10 @@ const ContactConfirm = (props) => {
 
                     {/* <div class="Form-Item"> */}
                     <div className="Form-Item-Label isMsg">
-                        <p>
+                        <div>
                             メッセージ本文
                             <span className="caution">*</span>
-                        </p>
+                        </div>
                     </div>
                     <p className="value">
                         {state.values.message}
