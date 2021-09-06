@@ -21,6 +21,7 @@ import Header from './Header';
 import Bottom from './Bottom';
 import ScrollToTop from './ScrollToTop';
 
+
 const App = () => {
 
     return (
@@ -49,7 +50,6 @@ const App = () => {
                     <Route exact path={'/Access'} component={Access} />
                     <Bottom />
                     <ScrollToTop />
-
                 </div>
                 {/* </Switch> */}
 

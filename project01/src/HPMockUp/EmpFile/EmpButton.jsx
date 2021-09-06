@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../styles/Emp.css";
 import NewGrad from '../images/NewGrad.png';
 import MidCareer from '../images/MidCareer.png';
 import Person from '../images/Person.jpg';
+import "../styles/Emp.css";
 
 const EmpButton = () => {
 
@@ -11,9 +11,7 @@ const EmpButton = () => {
         <div className="Emp">
             <div className="EmpBtn">
                 <Link to="/NewGrad">
-                    <button
-                        // className="EmpNBtn"
-                    >
+                    <button>
                         <p className="white">新卒採用</p>
                         <img src={NewGrad} alt="" />
                         <p>新卒採用行っております</p>
@@ -21,9 +19,7 @@ const EmpButton = () => {
                 </Link>
 
                 <Link to="/MidCareer">
-                    <button
-                        // className="EmpMBtn"
-                    >
+                    <button>
                         <p className="white">中途採用</p>
                         <img src={MidCareer} alt="" />
                         <p>中途採用行っております</p>

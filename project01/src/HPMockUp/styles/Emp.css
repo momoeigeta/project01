@@ -1,17 +1,16 @@
 /* EmpHeader */
 .backImg {
-    background-size:  cover;   
-    background-position:center bottom;     
+    background-size: cover;   
+    background-position: center bottom;     
     height: 200px;
     width: 100%;
     background-image: url(../images/EmpTop.jpg);
 }
-
-@media screen and (max-width:768px) {
+  @media screen and (max-width:768px) {
     .backImg {
         height: 100px;
     }
-}
+  }
 
 
 /* EmpButton */

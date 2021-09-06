@@ -4,6 +4,9 @@ import { useHistory } from 'react-router-dom';
 import '../styles/Contact.css';
 import useFormPersist from 'react-hook-form-persist';
 
+import TextareaAutosize from 'react-textarea-autosize';
+
+
 const ContactForm = () => {
 
     const { register, handleSubmit, reset, getValues, formState: { errors }, setValue, watch } = useForm({
@@ -146,8 +149,9 @@ const ContactForm = () => {
                         <div className="Form-Item-Label">
                             <div htmlFor="message">メッセージ本文
                                 <span className="caution">*</span>
-                                <textarea id="message" name="message"
+                                <TextareaAutosize id="message" name="message"
                                     className="Form-Item-Textarea"
+                                    minRows={5}
                                     {...register("message", {
                                         required: true,
                                         minLength: 1,

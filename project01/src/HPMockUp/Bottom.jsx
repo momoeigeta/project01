@@ -25,7 +25,7 @@ const Bottom = () => {
 
             {/* <div className="wrap around"> */}
             <div className="wrap around">
-                <Link to="/"><img className="force" src={ForceWhite} alt=""></img></Link>
+                <a href="/"><img className="force" src={ForceWhite} alt=""></img></a>
 
                 <ul className="menu-item">
                     <Link to="CorpHome"><li className="big">企業情報</li></Link>
