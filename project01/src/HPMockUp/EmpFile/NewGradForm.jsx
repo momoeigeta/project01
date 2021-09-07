@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
 import '../styles/Contact.css';
 import useFormPersist from 'react-hook-form-persist';
-
 import TextareaAutosize from 'react-textarea-autosize';
 
 

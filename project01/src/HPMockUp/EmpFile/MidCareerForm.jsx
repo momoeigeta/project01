@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
 import '../styles/Contact.css';
 import useFormPersist from 'react-hook-form-persist';
-
 import TextareaAutosize from 'react-textarea-autosize';
 
 
@@ -46,7 +45,6 @@ const MidCareerForm = () => {
                         <div className="Form-Item-Label">
                             <div htmlFor="company">会社名・法人名・団体名
                                 <span className="caution">*</span>
-                                {/* <span className="mgr10">※個人のお客様は「個人」とご記入ください</span> */}
                                 <p className="company">※個人のお客様は「個人」とご記入ください</p>
                                 <input type="text" id="company" name="company"
                                     className="Form-Item-Input"

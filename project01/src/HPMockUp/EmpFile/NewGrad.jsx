@@ -11,30 +11,28 @@ const NewGrad = () => {
         <>
             <header className="header" >
                 <div className="backImg">
-
                     <h1>新卒採用</h1>
                 </div>
             </header>
+
             <div className="lineshadow">
                 <p className="shadow">
-                    {/* <span className="lineshadow"> */}
                     新卒採用について
-                    {/* </span> */}
                 </p>
                 <hr className="hr1"></hr>
             </div>
+
             <p className="caution">現在、2021年度の募集を行っております。</p>
+
             <div className="lineshadow">
                 <p className="shadow">
-                    {/* <span className="lineshadow"> */}
                     募集要項
-                    {/* </span> */}
                 </p>
                 <hr className="hr2"></hr>
                 {/* <JobDescription /> */}
             </div>
 
-            <table >
+            <table>
                 <tbody>
                     <tr>
                         <th>募集職種</th>
@@ -96,11 +94,10 @@ const NewGrad = () => {
                     </tr>
                 </tbody>
             </table>
+
             <div className="lineshadow">
                 <p className="shadow">
-                    {/* <span className="lineshadow"> */}
                     採用フロー
-                    {/* </span> */}
                 </p>
                 <hr className="hr3"></hr>
             </div>
@@ -139,9 +136,7 @@ const NewGrad = () => {
 
             <div className="lineshadow">
                 <p className="shadow">
-                    {/* <span className="lineshadow"> */}
                     応募フォーム
-                    {/* </span> */}
                 </p>
                 <hr className="hr4"></hr>
             </div>
