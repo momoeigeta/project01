@@ -1,3 +1,4 @@
+/* Access */
 .Access .backImg {
     background-image: url(../images/AccessTop.jpg);
 }
@@ -10,18 +11,14 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-@media all and (max-width: 425px) {
+  @media all and (max-width: 500px) {
     .Access .around {
         display: block;
     }
-}
-
-
+  }
 
 .Access iframe {
-    border: none;
     width: 450px;
-    /* height: 300px; */
     margin: 10px;
     border: solid thin  rgb(27, 108, 238);
 }

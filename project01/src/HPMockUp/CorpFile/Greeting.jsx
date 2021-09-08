@@ -16,7 +16,7 @@ const Greeting = () => {
             <h2>
                 <span className="red">社</span>員が一丸となって社会への貢献を目指す
             </h2>
-            <hr></hr>
+            <hr />
 
             <div className="around">
                 <div>

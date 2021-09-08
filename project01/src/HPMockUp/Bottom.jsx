@@ -16,14 +16,6 @@ const Bottom = () => {
     return (
         <div className="bottom">
 
-            {/* <button
-                className="mpsize"
-                onClick={returnTop}>
-                <img src={UpArrow} alt="" />
-                <p>PAGE TOP</p>
-            </button> */}
-
-            {/* <div className="wrap around"> */}
             <div className="wrap around">
                 <a href="/"><img className="force" src={ForceWhite} alt=""></img></a>
 
@@ -50,8 +42,6 @@ const Bottom = () => {
                 </button>
 
             </div>
-
-            {/* </div> */}
 
             <button
                 className="mpsize"

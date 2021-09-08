@@ -1,7 +1,10 @@
+/* CorpHeader */
 .Corp .backImg {
     background-image: url(../images/CorpTop.jpg);
 }
 
+
+/* CorpButton */
 .Corp .CorpBtn {
     display: flex;
     flex-wrap: wrap;
@@ -37,71 +40,71 @@
     max-width: 100%;
     padding-left: 32%;
 }
-@media screen and (max-width:1024px) {
+  @media screen and (max-width:1024px) {
     .Corp .char p {
         padding-left: 29%;
     }
-}
-@media screen and (max-width:768px) {
+  }
+  @media screen and (max-width:768px) {
     .Corp .char p {
         padding-right: 20px;
         font-size: 18px;
     }
-}
-@media screen and (max-width:430px) {
+  }
+  @media screen and (max-width:430px) {
     .Corp .char p {
         font-size: 16px;
         padding-left: 16%;
     }
-}
+  }
 
-@media screen and (max-width:768px) {
+  @media screen and (max-width:768px) {
     .Corp .char hr {
         width: 78%;
     }
-}
-@media screen and (max-width:430px) {
+  }
+  @media screen and (max-width:430px) {
     .Corp .char hr {
         width: 90%;
     }
-}
+  }
 
 .Corp .shape1::after {
     height: 80px;
     top: -75px;
 }
-@media screen and (max-width:1024px) {
+  @media screen and (max-width:1024px) {
     .Corp .shape1::after {
         width: 69%;
         top: -105px;
         height: 115px;
     }
-}
-@media screen and (max-width:768px) {
+  }
+  @media screen and (max-width:768px) {
     .Corp .shape1::after {
         width: 68%;
         height: 110px;
         top: -97px;
         left: 29%;
     }
-}
-@media screen and (max-width:430px) {
+  }
+  @media screen and (max-width:430px) {
     .Corp .shape1::after {
         top: -111px;
         height: 120px;
         width: 78%;
         left: 16%;
     }
-}
-@media screen and (max-width:366px) {
+  }
+  @media screen and (max-width:366px) {
     .Corp .shape1::after {
         top: -134px;
         height: 140px;
     }
-}
+  }
+
 
 /* Greeting */
-
 .Greeting .backImg {
     background-image: url(../images/GreetingTop.jpg);
 }
@@ -122,7 +125,7 @@
   }
 .Greeting h2 {
     font-size: 30px;
-    margin: 50px 0px 30px 0px;
+    margin: 50px 20px 30px 20px;
 }
   @media all and (max-width: 768px) {
     .Greeting h2 {
@@ -135,18 +138,17 @@
         margin: 20px 20px;
     }
   }
+
 .Greeting hr {
     position: absolute;
-    width: 970px;
     top: 380px;
     height: 1px;
     background-color: black;
     border-width: 0px;
 }
-
   @media all and (max-width: 1440px) {
   .Greeting hr {
-      width: 70%;
+      width: 75%;
   }
   }
   @media all and (max-width: 1024px) {
@@ -202,23 +204,23 @@
   .Greeting img {
       height: 200px;
       width: 150px;
-      /* float: right; */
-      margin: 15px 100px 10px 100px;
+      margin: 16px 100px 10px 100px;
   }
 
   @media all and (max-width: 768px) {
     .Greeting img {
-      margin: 15px 50px 10px 50px;
+      margin: 16px 50px 10px 50px;
 
      }
   }
+
   .Greeting .picFrame p {
       margin: 0px;
       text-align: center;
   }
 
-  /* Services */
 
+  /* Services */
   .Services .backImg {
     background-image: url(../images/ServicesTop.jpg);
   }
@@ -230,7 +232,7 @@
   }
   @media all and (max-width: 425px) {
     .Services h2 {
-        margin: 20px 20px 0px 20px;
+        margin: 40px 20px 0px 20px;
     }
   }
 
@@ -238,7 +240,6 @@
     border-width: 0px;
     background-color: black;
     height: 1px;
-    /* margin-top: 0px; */
   }
 
   .Services .center {
@@ -246,7 +247,6 @@
       margin: 30px 150px 50px 150px;
       margin-left: 25%;
       margin-right: 25%;
-      /* width: 500px; */
   }
   @media all and (max-width: 768px) {
     .Services .center {
@@ -272,20 +272,12 @@
 
 
   /* Overview */
-
   .Overview .backImg {
     background-image: url(../images/OverviewTop.jpg);
   }
 
-  /* .Overview .left {
-    text-align: left;
-    display: inline-block;
-    margin: 0;
-    border: none;
-  } */
-
   .Overview a {
-      text-decoration: underline;
+      /* text-decoration: underline; */
       color: #0000ff;
   }
 
@@ -306,10 +298,18 @@
     }
   }
 
-  .Overview table ul {
+.Overview table ul {
       padding: 0px;
     }
 
+.Overview table th {
+    width: 64px;
+}
+  @media all and (max-width: 480px) {
+    .Overview table th {
+        width: auto;
+    }
+  }
     .Overview table td {
         padding: 0px 10px;
     }

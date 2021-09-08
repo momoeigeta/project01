@@ -13,15 +13,11 @@ const Overview = () => {
                 </div>
             </header>
 
-            <table border="1">
+            <table>
                 <tbody>
                     <tr>
-                        {/* <thead> */}
                         <th>会社名</th>
-                        {/* </thead> */}
-                        {/* <tbody> */}
                         <td>フォース株式会社</td>
-                        {/* </tbody> */}
                     </tr>
                     <tr>
                         <th>設立</th>
@@ -41,9 +37,7 @@ const Overview = () => {
                     </tr>
                     <tr>
                         <th>所在地</th>
-                        <td
-                        // className="left"
-                        >
+                        <td>
                             〒101-0054 東京都千代田区神田錦町3-18 寿ビル7階<br />
                             <Link to="/Access">会社所在地</Link>
                         </td>

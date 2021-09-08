@@ -21,6 +21,7 @@ import Header from './Header';
 import Bottom from './Bottom';
 import ScrollToTop from './ScrollToTop';
 
+import Header2 from './Header2';
 
 const App = () => {
 
@@ -32,6 +33,8 @@ const App = () => {
 
                 <div>
                     <Header />
+
+                    {/* <Header2 /> */}
 
                     <Route exact path={'/'} component={Home} />
                     <Route exact path={'/Contact'} component={Contact} />

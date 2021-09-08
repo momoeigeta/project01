@@ -4,8 +4,6 @@ import Force from './images/Force.png';
 import './styles/Accordion.css';
 import './styles/Header.css';
 
-
-
 import {
     Accordion,
     AccordionItem,
@@ -40,19 +38,13 @@ const Header = () => {
     const hiddenStyle = shouldHideHeader ? 'hidden' : '';
     const shadeStyle = shouldShowshade ? 'shade' : '';
 
-
     const [open, setOpen] = useState(false);
     const toggle = () => setOpen(!open);
 
-    // const reloadPage = () => {
-    //     window.location.reload();
-    // }
-
-    // const expanded = AccordionItemPanel("expanded");
-
     return (
-        // <>
         <div id="menubar">
+            {/* <div className="topline" /> */}
+
             <header className={`header  ${hiddenStyle} ${shadeStyle}`}>
 
                 <nav>
@@ -75,7 +67,7 @@ const Header = () => {
                             </ul>
                         </li>
 
-                        <Link to="/"><img src={Force} alt=""></img></Link>
+                        <Link to="/" className="forcea"><img src={Force} alt=""></img></Link>
                         <li><Link to="Access">アクセス</Link>
                             <div className="ver2"></div>
                         </li>
@@ -86,17 +78,15 @@ const Header = () => {
                     </ul>
 
                     <div className="mpsize">
-
-                        <a href="/">
+                        <a href="/" className="forcea">
                             <img src={Force} alt=""></img>
                         </a>
 
                         <button
                             onClick={() => toggle()}
                             className="accordion__button"
-                        >{open ? '閉じる' : 'メニュー'}</button>
+                        >{open ? '閉じる' : 'MENU'}</button>
                         <div className={open ? 'isOpen' : 'isClose'}>
-
 
                             <Accordion allowZeroExpanded>
 
@@ -104,18 +94,17 @@ const Header = () => {
                                     <AccordionItemHeading>
                                         <AccordionItemButton>
                                             <a href="/CorpHome"
-                                                onClick={() => toggle()}
-                                            >
-                                                企業情報</a>
+                                                onClick={() => toggle()}>
+                                                企業情報
+                                            </a>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
-                                    {/* <Link to="Greeting"> */}
+
                                     <a href="Greeting">
                                         <AccordionItemPanel>
                                             ごあいさつ
                                         </AccordionItemPanel>
                                     </a>
-                                    {/* </Link> */}
                                     <a href="Services" >
                                         <AccordionItemPanel>
                                             事業内容
@@ -129,19 +118,22 @@ const Header = () => {
                                 </AccordionItem>
 
                                 <AccordionItem>
+
                                     <AccordionItemHeading>
                                         <AccordionItemButton >
                                             <a href="/EmpInfoHome"
-                                                onClick={toggle}
-                                            >採用情報</a>
+                                                onClick={toggle}>
+                                                採用情報
+                                            </a>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
-                                    <a href="/MidCareer" >
+
+                                    <a href="/MidCareer">
                                         <AccordionItemPanel>
                                             中途採用
                                         </AccordionItemPanel>
                                     </a>
-                                    <a href="/NewGrad" >
+                                    <a href="/NewGrad">
                                         <AccordionItemPanel>
                                             新卒採用
                                         </AccordionItemPanel>
@@ -149,12 +141,10 @@ const Header = () => {
                                 </AccordionItem>
 
                                 <Link to="Access" onClick={toggle}>
-                                    <li>アクセス </li>
+                                    <li>アクセス</li>
                                 </Link>
                                 <Link to="/ContactHome" onClick={toggle}>
-                                    <li>
-                                        お問い合わせ
-                                    </li>
+                                    <li>お問い合わせ</li>
                                 </Link>
 
                             </Accordion>
@@ -167,9 +157,7 @@ const Header = () => {
             </header>
         </div>
 
-        // {/* </> */}
-
-    )
+    );
 };
 
 export default Header;
