@@ -1,31 +1,43 @@
+/* Header */
 #menubar {
-	height: 89px;
+	/* height: 89px; */
+	height: 85px;
 }
-@media screen and (max-width:768px) {
-	#menubar {
-		height: 137px;
-	}
-}
+  @media screen and (max-width:768px) {
+	  #menubar {
+		/* height: 133px; */
+		height: 113px;
+	  }
+  }
+
 nav{
-	/* background:#333; */
-	/* color:#fff; */
 	text-align: center;
-    position:relative;
+    position: relative;
     z-index:999;
-    /* height: 200px; */
 	width: 100%;
-	/* max-width: 100%; */
 }
 
-nav .topline {
-		height: 25px;
-		background-color: rgb(94, 94, 126);
+nav 
+.topline {
+	height: 25px;
+	background-color: rgb(94, 94, 126);
+}
+  @media screen and (max-width:768px) {
+    nav .topline {
+        height: 15px;
 	}
+  }
 
 nav img {
 	width: 120px;
     height: 60px;
-    margin: 0 100px 0 100px;
+	vertical-align: bottom;
+}
+@media screen and (max-width:768px) {
+	nav img {
+		width: 100px;
+		height: 50px;
+	}
 }
 
 /*ナビゲーションを横並びに*/
@@ -50,9 +62,9 @@ nav ul li{
 nav ul li a{
 	display: block;
 	text-decoration: none;
-	/* color: #999; */
 	color: black;
-	padding:20px 35px;
+	/* padding:20px 35px; */
+	padding:18px 35px;
 	transition:all .3s;
 }
 
@@ -79,7 +91,6 @@ nav ul li.has-child::before{
     transform: rotate(135deg);
 }
 
-
 /*== 2・3階層目の共通設定 */
 
 /*下の階層を持っているulの指定*/
@@ -87,17 +98,13 @@ nav li.has-child ul{
     /*絶対配置で位置を指定*/
 	position: absolute;
 	left:0;
-	top:62px;
+	/* top:62px; */
+	top: 60px;
 	z-index: 4;
-    /*形状を指定*/
-	/* background:#e8f1f5; */
 	background-color: #f4f4f4;
-
 	width:160px;
-    /*はじめは非表示*/
 	visibility: hidden;
 	opacity: 0;
-    /*アニメーション設定*/
 	transition: all .3s;
 	padding-left: 0px;
 }
@@ -113,12 +120,8 @@ nav li.has-child ul li:active > ul{
 
 /*ナビゲーションaタグの形状*/
 nav li.has-child ul li a{
-	/* color: #fff; */
-	/* color: gray; */
 	color: #444;
-	/* border-bottom:solid 1px rgb(163, 161, 161,0.6); */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 nav li.has-child ul li:last-child a{
@@ -129,7 +132,6 @@ nav li.has-child ul li a:hover,
 nav li.has-child ul li a:active{
 	/* background:#b9d5f8; */
     background-color: #ddd;
-
 }
 
 .mpsize {
@@ -151,44 +153,48 @@ nav li.has-child ul li a:active{
 }
 }
 
-
 .ver1 {
 	content:"";
     position:absolute;
     width: 1px;
-    /* height: 80%; */
     height: 60%;
-
 	background-color: black;
-	color: black;
-    left: 190px;
-	/* left: 120%; */
-	/* top: 10px; */
+    /* left: 190px; */
 	top: 14px;
-	left: 12vw;
-	/* box-sizing: border-box; */
+	/* left: 12vw; */
 }
+@media screen and (max-width:1440px) {
+	.ver1 {
+		left: 13vw;
+}}
+@media screen and (max-width:1024px) {
+	.ver1 {
+		left: 14vw;
+	}}
 
 .ver2 {
 	content:"";
     position:absolute;
     width: 1px;
-    /* height: 80%; */
     height: 60%;
 	background-color: black;
-	color: black;
     left: 190px;
-	/* left: 120%; */
-	/* top: 10px; */
 	top: 14px;
-	left: 13vw;
-	/* box-sizing: border-box; */
+	/* left: 13vw; */
 }
-
+@media screen and (max-width:1440px) {
+	.ver2 {
+		left: 13vw;
+	}}
+  @media screen and (max-width:1024px) {
+      .ver2 {
+        left: 15vw;
+  }}
 
 #menubar header {
 	position: fixed;
 	top: 0;
+	/* top: 25px; */
 	left: 0;
 	/* display: flex; */
 	align-items: center;
@@ -198,12 +204,14 @@ nav li.has-child ul li a:active{
 	background-color: #fff;
 	color: #333;
 	transform: translateY(0);
+	/* transform: translateY(-50%); */
 	transition: transform 0.3s ease;
     z-index: 999;
 }
 
 #menubar header.hidden {
 	transform: translateY(-110%);
+	/* transform: translateY(-150%); */
   }
 
 #menubar header.shade {
@@ -238,5 +246,15 @@ button.accordion__button::before {
 	display: none;
 }
 
-
-
+#menubar a.forcea {
+	display: inline-block;
+	height: 60px;
+	width: 120px;
+	vertical-align: bottom;
+}
+@media screen and (max-width:768px) {
+ #menubar a.forcea  {
+	height: 50px;
+	width: 100px;
+ }
+}
